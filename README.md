@@ -3,21 +3,28 @@ Technovus theme for wordpress.org
 
 ## Setup
 ### Ubuntu 17.04
- - Install PHP
-    ```bash
-    sudo apt-get install php php-common php-mbstring php-xmlrpc php-soap php-gd php-xml php-intl php-mysqlnd php-cli php-mcrypt php-ldap php-zip php-curl
-    ```
- - Download Wordpress
-    ```bash
-    # Download latest WordPress
-    cd /tmp && wget https://wordpress.org/latest.tar.gz
-    # Extract to default Apache2 root folder
-    sudo tar -zxvf latest.tar.gz -C /var/www/html
-    # modify directory permission
-    sudo chown -R www-data:www-data /var/www/html/
-    sudo chmod -R 755 /var/www/html/
-    ```bash
- - Configure Apache2
-    ```
-    sudo nano /etc/apache2/sites-available/wordpress.conf
-    ```
+##### Installation and configuration
+Follow instructions listed on [this site](https://websiteforstudents.com/installing-wordpress-ubuntu-17-04-17-10-apache2-mariadb-php/).
+
+##### Troublshooting
+If MariaDB fails to start and returns a timeout error
+`mariadb.service: failed with result 'timeout'`, restart your computer and try again.
+
+Input the below to check if problem is solved
+```bash
+    sudo systemctl start mariadb.service
+```
+
+If problem persists try [the following](https://unix.stackexchange.com/questions/249530/mariadb-dependency-problems-leaving-unconfigured) and restart afterwards.
+
+After installation, if the WordPress splash screen does not show up in localhost, run the below
+```bash 
+    # navigate to server directory
+    cd /var/www/html/
+    # Rm default server index
+    sudo rm index.html index.php
+    # copy all wordpress files into the home server index
+    sudo cp -rf worpress/* .
+```
+
+Goto your browser and enter `localhost`
