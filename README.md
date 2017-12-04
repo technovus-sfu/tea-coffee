@@ -3,10 +3,10 @@ Technovus theme for wordpress.org
 
 ## Setup
 ### Ubuntu 17.04
-##### Installation and configuration
+#### Installation and configuration
 Follow instructions listed on [this site](https://websiteforstudents.com/installing-wordpress-ubuntu-17-04-17-10-apache2-mariadb-php/).
 
-##### Troublshooting
+#### Troublshooting
 If MariaDB fails to start and returns a timeout error
 `mariadb.service: failed with result 'timeout'`, restart your computer and try again.
 
