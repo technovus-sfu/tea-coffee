@@ -29,4 +29,6 @@ After installation, if the WordPress splash screen does not show up in localhost
     sudo cp -rf worpress/* .
 ```
 
-Goto your browser and enter `localhost`
+Goto your browser and enter `localhost` 
+
+Please report [issues](../../issues) and suggest [changes](../../pulls) to better modify these installation instructions
