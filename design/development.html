@@ -10,44 +10,9 @@
     <meta name="author" content="Technovus">
     <link rel="shortcut icon" href="" type="image/x-icon" />
 
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
-    <style>
-        html, body {
-            margin: 0;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            background: pink;
-            height: 10vh;
-            position: fixed;
-            width: 100%;
-        }
-        .header-icon {
-            display: flex;
-        }
-        a svg{
-            height: 50px;
-        }
-        section {
-            height: 100vh;
-        }
-        .header-shadow {
-            height: 10vh;
-            display: flex
-        }
-        .header-bubble {
-            height: 90vh;
-            display: flex;
-        }
-        bubble {
-            display: flex;
-            background: green;
-            margin: 1em;
-            width: 100%;
-            border-radius: 10px;
-        }
-    </style>
+    
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -55,24 +20,29 @@
 </head>
 
 <body>
-    <header>
-        <a href="#" class="header-icon">
-            <svg viewBox="0 0 24 24">
-                <path fill="rgba(0,0,0,0.6)" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z" />
-            </svg>
-        </a>
-        <nav>
-            <a class="nav-item active" href="#">Home</a>
-            <a class="nav-item" href="#">New features</a>
-            <a class="nav-item" href="#">Press</a>
-            <a class="nav-item" href="#">New hires</a>
-            <a class="nav-item" href="#">About</a>      
-        </nav>
+    <header class="fixed-top">
+        <div class="container">
+            <a href="#" class="brand navbar-brand">
+                <svg viewBox="0 0 24 24">
+                    <path fill="#6ccce3" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z" />
+                </svg>
+            </a>
+            <nav>
+                <a class="nav-item active" href="#">Technovus</a>
+                <a class="nav-item" href="#">About</a>
+                <a class="nav-item" href="#">News</a>
+                <a class="nav-item" href="#">Projects</a>
+                <a class="nav-item" href="#">Links</a>      
+            </nav>
+            <datetime class="header-right">
+                SUN 10-DEC-2017 | 06:14
+            </datetime>
+        </div>
     </header>
     
     <section class="home-section-1">
-        <span class="header-shadow"></span>
-        <div class="header-bubble">
+        <span class="home-bubble-shadow"></span>
+        <div class="home-bubble">
             <bubble>
 
             </bubble>
@@ -80,8 +50,18 @@
     </section>
 
     <footer>
-        Footer
+        <div class="container">
+            <credits>
+                <a href="#" class="brand footer-brand">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="rgba(0,0,0,0.3)" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z" />
+                    </svg>
+                </a>    
+                <span>Technovus Student Society &copy;2017</span>      
+            </credits>
+        </div>
     </footer>
+    <color-bar></color-bar>
     
     <!--[if lt IE 9]>
         <script src="js/scripts.js"></script>
