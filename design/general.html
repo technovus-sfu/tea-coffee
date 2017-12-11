@@ -12,6 +12,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="css/general-styles.css?v=1.0">
+    <link rel="stylesheet" href="css/home-styles.css?v=1.0">
     
 
     <!--[if lt IE 9]>
@@ -20,71 +21,53 @@
 </head>
 
 <body>
-    <header class="fixed-top">
+    <section class="header-section">
+        <header class="fixed-top">
+            <div class="container">
+                <a href="#">
+                    <icon class="header-icon"></icon>
+                </a>
+                <nav>
+                    <a class="nav-item active" href="#">Technovus</a>
+                    <a class="nav-item" href="#">About</a>
+                    <a class="nav-item" href="#">News</a>
+                    <a class="nav-item" href="#">Projects</a>
+                    <a class="nav-item" href="#">Links</a>      
+                </nav>
+                <datetime class="right">
+                    SUN 10-DEC-2017 | 06:14
+                </datetime>
+            </div>
+        </header>
+        <span class="header-shadow"></span>
         <div class="container">
-            <a href="#" class="brand navbar-brand">
-                <svg viewBox="0 0 24 24">
-                    <path fill="#6ccce3" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z" />
-                </svg>
-            </a>
-            <nav>
-                <a class="nav-item active" href="#">Technovus</a>
-                <a class="nav-item" href="#">About</a>
-                <a class="nav-item" href="#">News</a>
-                <a class="nav-item" href="#">Projects</a>
-                <a class="nav-item" href="#">Links</a>      
-            </nav>
-            <datetime class="header-right">
-                SUN 10-DEC-2017 | 06:14
-            </datetime>
-        </div>
-    </header>
-    
-    <section class="home-section-1">
-        <span class="home-bubble-shadow"></span>
-        <div class="section-bubble">
             <bubble>
-                <p>Technology<span class="bull">•</span>Innovation<span class="bull">•</span>Us</p>
-                <div>
-                    <button>Hello1</button>
-                    <button>Hello2</button>
-                </div>
+                <h1>General</h1>
             </bubble>
         </div>
     </section>
 
-    <section class="home-section-2">
-        <div class="section-bubble">
-            <bubble>
-                <div class="text">
-                    <h2>Lorem Ipsum</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida consequat dictum.
-                        Aliquam molestie sit amet mi non tempus. Donec odio enim, interdum id sem a, lacinia faucibus libero.
-                        Quisque pharetra augue et lorem commodo maximus. Orci varius natoque penatibus et magnis dis parturient montes,
-                        nascetur ridiculus mus. Maecenas ut ligula elementum, eleifend turpis quis, aliquet metus.
-                        Integer interdum ex quis lacus lacinia, sed lobortis dolor auctor. Donec sit amet vehicula erat.
-                        Pellentesque eu velit sit amet ex mattis viverra.
-                    </p>
-                </div>
-                <img src="#" alt="Lorem Ipsum image"/>
-            </bubble>
+    <section class="footer-section">
+        <footer>
+            <div class="container">
+                <credits class="footer-item">
+                    <a href="#" class="brand footer-brand">
+                        <icon class="footer-icon"></icon>
+                    </a>    
+                    <span>Technovus Student Society &copy;2017</span>      
+                </credits>
+                <links class="footer-item">
+                    <nav>
+                        <a class="nav-item" href="#">Github</a>
+                        <a class="nav-item" href="#">Facebook</a>
+                    </nav>
+                </links>
+            </div>
+        </footer>
+        <div class="container">
+            <color-bar></color-bar>
         </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <credits>
-                <a href="#" class="brand footer-brand">
-                    <svg viewBox="0 0 24 24">
-                        <path fill="rgba(0,0,0,0.3)" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z" />
-                    </svg>
-                </a>    
-                <span>Technovus Student Society &copy;2017</span>      
-            </credits>
-        </div>
-    </footer>
-    <color-bar></color-bar>
     
     <!--[if lt IE 9]>
         <script src="js/scripts.js"></script>

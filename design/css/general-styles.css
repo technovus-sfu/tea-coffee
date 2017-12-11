@@ -1,13 +1,5 @@
-html, body {
-    margin: 0;
-    font-family: 'Ubuntu', sans-serif;
-}
-.bull {
-    padding: 0 5px;
-    color: #555;
-}
-.nav-item.active {
-    color: #6ccce3;
+.header-section {
+    flex-direction: column;
 }
 header{
     display: flex;
@@ -15,7 +7,6 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background: rgba(255, 255, 255, 0.8);
     background: linear-gradient(141deg, rgba(250, 245, 245, 0.9) 0%, rgba(250, 250, 250, 0.7) 5%, rgba(255, 255, 255, 0.8) 75%);
 }
 .fixed-top {
@@ -26,150 +17,49 @@ header{
     height: 10vh;
     z-index: 1000;
 }
-.header-right{
-    margin-left: auto
+.header-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
-header .container {
-    height: 50px;
-}
-.container {
+header .container nav {
     display: flex;
-    width:100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.brand {
-    display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-}
-nav{
-    margin: auto 0;
-}
-nav a {
-    padding: .5rem;
-}
-.nav-item{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: 'Audiowide', cursive;
-    font-size: 13px;
-    transition: all 0.5s ease 0.02s;
-}
-.navbar-brand svg{
-    height: 100%;
-    width: 50px;
-}
-datetime {
-    margin: auto 0;
-    font-family: 'Audiowide', cursive;
-    color:rgba(0,0,0,0.6);
-    font-weight: 100;
-    font-size: 13px;
-}
-
-section {
-    height: 100vh;
-}
-bubble {
-    margin: 1rem;
-    width: 100%;
-    border-radius: 1rem;
-}
-.home-bubble-shadow {
-    height: 10vh;
-    display: flex
-}
-.section-bubble {
-    height: 90vh;
-    display: flex;
-}
-.section-bubble bubble {
-    display: flex;
-    
-    
-}
-.home-section-1 .section-bubble bubble {
-    flex-direction: column;
-    font-size: 50px;
-    color: #fff;
-    justify-content: center;
     align-items: center;
+}
+header .container nav a {
+    padding: .5rem;
+    margin: .2rem;
+    font-size: 10px;
+}
+header .container nav .nav-item:hover {
+    color: #ffffff;
+    background: #6ccce3;
+}
+.header-shadow {
+    display: flex;
+    height: 10vh;
+}
+.header-section bubble {
     background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
-.home-section-2 .section-bubble bubble {
-    display: flex
-}
-.home-section-2 .section-bubble bubble .text {
-    display: block
-}
-.home-section-2 .section-bubble bubble .image{
-    display: block;
-    margin-left: auto;
+.header-section bubble h1 {
+    display: flex;
+    height: 90px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Audiowide', cursive;
 }
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    /*background: linear-gradient(#ffffff 0%, rgba(220, 220, 220, 0.8) 50%); /* Standard syntax */
-    background: rgba(255, 255, 255, 0.8);
-}
-footer .container{
-    height: 50vh;
-}
-.footer-brand svg{
-    height: 100%;
-    width: 300px;
-}
-credits {
-    display: flex;
-    font-size: 16px;
-    font-weight: 700;
-    flex-direction: column;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.3);
-}
-color-bar {
-    display: flex;
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(to right, #6ccce3 , #ffffff); /* Standard syntax */
-    animation: multi 5s infinite;
+.bull {
+    padding: 0 5px;
+    color: #555;
 }
 
-.nav-item:hover{
+.nav-item.active {
     color: #6ccce3;
-}
-
-
-/*Animations*/
-/*logo colour transition*/
-@-webkit-keyframes multi {
-    0% {background:#aad4dd;}
-    10% {background:#0fb8ad;}
-    25% {background:#6ccce3;}    
-    50% {background:#2cb5e8;}
-    75% {background:#6ccce3;}
-    90% {background:#0fb8ad;}
-    100% {background:#aad4dd;}
-} 
-@keyframes multi {
-    0% {background:#aad4dd;}
-    10% {background:#0fb8ad;}
-    25% {background:#6ccce3;}    
-    50% {background:#2cb5e8;}
-    75% {background:#6ccce3;}
-    90% {background:#0fb8ad;}
-    100% {background:#aad4dd;}
 }
