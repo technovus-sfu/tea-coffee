@@ -19,34 +19,127 @@ bubble {
 }
 /* general */
 /* SPLASH */
+icon {
+    display: block;
+    border-radius: 3px;
+    background: #6ccce3;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
 .splash-section {
     height: 100vh;   
 }
 .splash-section bubble {
     background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
+.splash-header {
+    display: flex;
+    height: 10%;
+    align-items: center;
+}
+.splash-info {
+    display: flex;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.splash-header-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 2rem;
+}
+datetime {
+    margin: auto 0;
+    font-family: 'Audiowide', cursive;
+    color: rgba(0,0,0,0.6);
+    font-weight: 100;
+    font-size: 13px;
+    margin-right: 2rem;
+}
+.right {
+    margin-left: auto;
+}
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.splash-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+}
+.title span {
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Audiowide',cursive;
+}
+/* Typewriter */
+.typewriter .subtitle {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin-bottom: 60px;
+    font-size: 18px;
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+nav a {
+    padding: 1rem;
+    border-radius: 3px;
+}
+.nav-item{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Audiowide', cursive;
+    font-size: 13px;
+    transition: all 0.5s ease 0.02s;
+}
+.nav-item:hover {
+    background: #fff;
+}
 /* splash */
 /* RECENTS */
-card {
-    width: 200px;
-    height: 250px;
-    background: purple;
-    margin: 1rem;
-    display: flex;
-    flex-direction: row
-}
 /* recents */
 /* FOOTER */
 .footer-section {
     flex-direction: column;
-    background: linear-gradient(#ffffff 0%, rgba(220, 220, 220, 0.8) 50%); /* Standard syntax */
+    /*background: linear-gradient(#ffffff 0%, rgba(220, 220, 220, 0.8) 50%); /* Standard syntax */
+    background: rgba(220, 220, 220, 0.8);
 }
 footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;
+}
+.footer-icon{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 1rem;
+}
+.footer-item {
+    display: flex;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+credits {
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 700;
+}
+links nav {
+    margin-top: 5px;
 }
 color-bar {
     display: flex;
@@ -60,6 +153,7 @@ color-bar {
 /* footer */
 
 /* ANIMATIONS */
+/* Color bar effect */
 @keyframes multi {
     0% {background:#aad4dd;}
     10% {background:#0fb8ad;}
@@ -69,14 +163,17 @@ color-bar {
     90% {background:#0fb8ad;}
     100% {background:#aad4dd;}
 }
-@-webkit-keyframes multi {
-    0% {background:#aad4dd;}
-    10% {background:#0fb8ad;}
-    25% {background:#6ccce3;}    
-    50% {background:#2cb5e8;}
-    75% {background:#6ccce3;}
-    90% {background:#0fb8ad;}
-    100% {background:#aad4dd;}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange }
 }
 /* animations */
 
