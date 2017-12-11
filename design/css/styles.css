@@ -2,6 +2,13 @@ html, body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
+.bull {
+    padding: 0 5px;
+    color: #555;
+}
+.nav-item.active {
+    color: #6ccce3;
+}
 header{
     display: flex;
     flex-wrap: wrap;
@@ -9,7 +16,7 @@ header{
     justify-content: space-between;
     padding: 0 1rem;
     background: rgba(255, 255, 255, 0.8);
-    background: linear-gradient(141deg, rgba(250, 245, 245, 0.9) 0%, rgba(250, 250, 250, 0.7) 51%, rgba(255, 255, 255, 0.8) 75%);
+    background: linear-gradient(141deg, rgba(250, 245, 245, 0.9) 0%, rgba(250, 250, 250, 0.7) 5%, rgba(255, 255, 255, 0.8) 75%);
 }
 .fixed-top {
     position: fixed;
@@ -66,25 +73,47 @@ datetime {
     font-family: 'Audiowide', cursive;
     color:rgba(0,0,0,0.6);
     font-weight: 100;
+    font-size: 13px;
 }
 
 section {
     height: 100vh;
 }
+bubble {
+    margin: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+}
 .home-bubble-shadow {
     height: 10vh;
     display: flex
 }
-.home-bubble {
+.section-bubble {
     height: 90vh;
     display: flex;
 }
-bubble {
+.section-bubble bubble {
     display: flex;
+    
+    
+}
+.home-section-1 .section-bubble bubble {
+    flex-direction: column;
+    font-size: 50px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    margin: 1em;
-    width: 100%;
-    border-radius: 10px;
+}
+.home-section-2 .section-bubble bubble {
+    display: flex
+}
+.home-section-2 .section-bubble bubble .text {
+    display: block
+}
+.home-section-2 .section-bubble bubble .image{
+    display: block;
+    margin-left: auto;
 }
 
 footer {
