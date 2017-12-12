@@ -1,166 +1,246 @@
-/*
- * Globals
- */
+/* GENERAL */
+html, body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+section {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+bubble {
+  margin: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+/* general */
+/* SPLASH */
+icon {
+  display: block;
+  border-radius: 3px;
+  background: #6ccce3;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+.splash-section {
+  height: 100vh;   
+}
+.splash-section bubble {
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+.splash-header {
+  display: flex;
+  height: 10%;
+  align-items: center;
+}
+.splash-info {
+  display: flex;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.splash-header-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 2rem;
+}
+datetime {
+  margin: auto 0;
+  font-family: 'Audiowide', cursive;
+  color: rgba(0,0,0,0.6);
+  font-weight: 100;
+  font-size: 13px;
+  margin-right: 2rem;
+}
+.right {
+  margin-left: auto;
+}
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.splash-icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-right: 25px;
+}
+.title span {
+  font-size: 75px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Audiowide',cursive;
+}
+/* Typewriter */
+.typewriter .subtitle {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin-bottom: 60px;
+  font-size: 18px;
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+nav a {
+  padding: 1rem;
+  border-radius: 3px;
+}
+.nav-item{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Audiowide', cursive;
+  font-size: 13px;
+  transition: all 0.5s ease 0.02s;
+}
+.nav-item:hover {
+  background: #fff;
+}
+/* splash */
+/* RECENTS */
+/* recents */
+/* FOOTER */
+.footer-section {
+  flex-direction: column;
+  /*background: linear-gradient(#ffffff 0%, rgba(220, 220, 220, 0.8) 50%); /* Standard syntax */
+  background: rgba(220, 220, 220, 0.8);
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.footer-icon{
+  height: 200px;
+  width: 200px;
+  margin-bottom: 1rem;
+}
+.footer-item {
+  display: flex;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+}
+credits {
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 700;
+}
+links nav {
+  margin-top: 5px;
+}
+color-bar {
+  display: flex;
+  width: 100%;
+  height: 8px;
+  margin: 1rem;
+  border-radius: 100px;
+  background: linear-gradient(to right, #6ccce3 , #ffffff);
+  animation: multi 5s infinite;
+}
+/* footer */
 
-body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+.header-section {
+  flex-direction: column;
+}
+header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background: linear-gradient(141deg, rgba(250, 245, 245, 0.9) 0%, rgba(250, 250, 250, 0.7) 5%, rgba(255, 255, 255, 0.8) 75%);
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 10vh;
+  z-index: 1000;
+}
+.header-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+}
+header .container nav a {
+  padding: .5rem;
+  margin: .2rem;
+  font-size: 10px;
+}
+header .container nav .nav-item:hover {
+  color: #ffffff;
+  background: #6ccce3;
+}
+.header-shadow {
+  display: flex;
+  height: 10vh;
+}
+.header-section bubble {
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+.header-section bubble h1 {
+  display: flex;
+  height: 90px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Audiowide', cursive;
+}
+
+.bull {
+  padding: 0 5px;
   color: #555;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #333;
+.nav-item.active {
+  color: #6ccce3;
+}
+
+/* ANIMATIONS */
+/* Color bar effect */
+@keyframes multi {
+  0% {background:#aad4dd;}
+  10% {background:#0fb8ad;}
+  25% {background:#6ccce3;}    
+  50% {background:#2cb5e8;}
+  75% {background:#6ccce3;}
+  90% {background:#0fb8ad;}
+  100% {background:#aad4dd;}
 }
 
 
-/*
- * Override Bootstrap's default container.
- */
 
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-
-/*
- * Masthead for nav
- */
-
-.blog-masthead {
-  background-color: #428bca;
-  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange }
 }
-
-/* Nav links */
-.blog-nav-item {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  font-weight: 500;
-  color: #cdddeb;
-}
-.blog-nav-item:hover,
-.blog-nav-item:focus {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Active state gets a caret at the bottom */
-.blog-nav .active {
-  color: #fff;
-}
-.blog-nav .active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -5px;
-  vertical-align: middle;
-  content: " ";
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid;
-  border-left: 5px solid transparent;
-}
-
-
-/*
- * Blog name and description
- */
-
-.blog-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.blog-title {
-  margin-top: 30px;
-  margin-bottom: 0;
-  font-size: 60px;
-  font-weight: normal;
-}
-.blog-description {
-  font-size: 20px;
-  color: #999;
-}
-
-
-/*
- * Main column and sidebar layout
- */
-
-.blog-main {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-/* Sidebar modules for boxing content */
-.sidebar-module {
-  padding: 15px;
-  margin: 0 -15px 15px;
-}
-.sidebar-module-inset {
-  padding: 15px;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-}
-.sidebar-module-inset p:last-child,
-.sidebar-module-inset ul:last-child,
-.sidebar-module-inset ol:last-child {
-  margin-bottom: 0;
-}
-
-
-/* Pagination */
-.pager {
-  margin-bottom: 60px;
-  text-align: left;
-}
-.pager > li > a {
-  width: 140px;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 30px;
-}
-
-
-/*
- * Blog posts
- */
-
-.blog-post {
-  margin-bottom: 60px;
-}
-.blog-post-title {
-  margin-bottom: 5px;
-  font-size: 40px;
-}
-.blog-post-meta {
-  margin-bottom: 20px;
-  color: #999;
-}
-
-
-/*
- * Footer
- */
-
-.blog-footer {
-  padding: 40px 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid #e5e5e5;
-}
-.blog-footer p:last-child {
-  margin-bottom: 0;
-}
+/* animations */
