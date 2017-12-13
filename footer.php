@@ -1,12 +1,13 @@
-    <footer class="">
+    <footer class="main main-footer">
         <container>
-            <nav class="splash-footer-links">
+            <nav class="main-footer-links">
                 <?php $args = array('theme_location' => 'footer'); ?>
                 <?php wp_nav_menu( $args ); ?>
-                <span><icon class="splash-footer-icon"></icon></span>
+                <span><icon class="main-footer-icon"></icon></span>
             </nav>
         </container>
     </footer>
+    <light></light>
     <!--[if lt IE 9]>
         <script src="js/scripts.js"></script>
     <![endif]-->

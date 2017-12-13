@@ -14,17 +14,226 @@ This theme, like many other Technovus projects, is licensed under the MIT.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* Navigation menus */
-.splash-section ul {
+
+/* GENERAL */
+html, body {
+    margin: 0 !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    z-index: 500;
+}
+bubble {
+    margin: .5rem;
+    width: 100%;
+    border-radius: .5rem;
+}
+container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    width: 100%;
+}
+icon {
+    display: block;
+    border-radius: 3px;
+    background: #6ccce3;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+.flex {
+    display: flex;
+}
+.right{
+    margin-left: auto;
+}
+
+/* MAIN */
+/* HEADER */
+.main ul {
     margin: 0;
     padding: 0;
 }
-.splash-section ul li {
+.main ul li {
     list-style: none;
     display: flex;
 }
-.splash-section nav ul {
+.main nav ul {
     display: flex;
     width: 100%;
     list-style: none;
+}
+
+.main-header {
+    display: flex;
+    height: 50px;
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+    align-items: center;
+}
+.main-header container {
+    align-items: center;
+    height: 100%;
+}
+.main-header-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.social-links {
+    display: flex;
+    z-index: 500;
+}
+.site-links {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 40px);
+    height: 50px;
+    top: 0;
+}
+.site-links a, .social-links a {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.main-header a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.6);
+    transition: all 0.5s ease 0.02s;
+}
+.main-header a:hover {
+    color: #6ccce3;
+}
+.main-header a:active {
+    color: #6ccce3; 
+}
+
+.title-head {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    z-index: 500;
+}
+.main-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+}
+.title-head span {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Audiowide',cursive;
+    margin-left: 10px;
+    color: #6ccce3;
+}
+/* header */
+/* PAGE-HEADER */
+.page-header bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);;
+    width: auto;
+    height: 150px;
+}
+.page-header bubble h1 {
+    display: flex;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: 'Audiowide', sans-serif;
+}
+/* page-header*/
+
+/* POSTS */
+.post a {
+    color: #0073A9;
+}
+/* posts */
+
+/* FOOTER */
+.main-footer {
+    height: 50px;
+    margin-top: 5rem;
+    background: rgba(0,0,0,0.8)
+}
+.main-footer-links {
+    display: flex;
+}
+.main-footer-links span {
+    display: flex;
+    align-items: center;
+}
+.main-footer container {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    width: calc(100% - 40px);
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif;
+}
+.main-footer-icon {
+    width: 15px;
+    height: 15px;
+}
+.main-footer-links a::after {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline;
+    content: '\2022';
+    color: rgba(255,255,255,0.5);
+}
+.main-footer-links span::after {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline;
+}
+light {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    animation: multi 5s infinite;
+}
+/* footer*/
+
+/* ANIMATIONS */
+/* Color effect */
+@keyframes multi {
+    0% {
+        background:#aad4dd;
+    }
+    10% {
+        background:#0fb8ad;
+    }
+    25% {
+        background:#6ccce3;
+    }    
+    50% {
+        background:#2cb5e8;
+    }
+    75% {
+        background:#6ccce3;
+    }
+    90% {
+        background:#0fb8ad;
+    }
+    100% {
+        background:#aad4dd;
+    }
 }
