@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -27,13 +27,12 @@
                     <div class="title-head">
                         <a href="#" class="title">
                             <icon class="splash-header-icon"></icon>
-                            <span>Technovus</span>
+                            <span><?php echo get_bloginfo('name')?></span>
                         </a>
                         <div class="flex right">
                             <nav class="social-links">
-                                <a class="nav-item" href="#">Github</a>
-                                <a class="nav-item" href="#">Twitter</a>
-                                <a class="nav-item" href="#">Facebook</a>
+                                <?php $args = array('theme_location' => 'social'); ?>
+                                <?php wp_nav_menu( $args ); ?> 
                             </nav>
                             <label for="header-main--trigger">
                                     <span class="header-main--trigger_icon">
@@ -43,10 +42,8 @@
                         </div>
                     </div>
                     <nav class="site-links">
-                        <a class="nav-item" href="#">About</a>
-                        <a class="nav-item" href="#">News</a>
-                        <a class="nav-item" href="#">Projects</a>
-                        <a class="nav-item" href="#">Links</a>
+                        <?php $args = array('theme_location' => 'primary'); ?>
+                        <?php wp_nav_menu( $args ); ?> 
                     </nav>
                 </container>
             </div>
@@ -55,7 +52,7 @@
                 <div class="splash-info-content">
                     <span><?php echo get_bloginfo('description'); ?></span>
                     <span class="typewriter">
-                        <p>Technology. Innovation. Us.</p>
+                        <p>Community of Enthusiats.</p>
                     </span> 
                 </div>
                 <nav class="shortcut-links">
@@ -70,9 +67,8 @@
             <div class="splash-footer">
                 <container>
                     <nav class="splash-footer-links">
-                        <a class="nav-item" href="#">Technovus &copy;2017</a>
-                        <a class="nav-item" href="#">Contact</a>
-                        <a class="nav-item" href="#">Join Us</a>
+                        <?php $args = array('theme_location' => 'footer'); ?>
+                        <?php wp_nav_menu( $args ); ?>
                         <span><icon class="splash-footer-icon"></icon></span>
                     </nav>
                 </container>
@@ -82,5 +78,6 @@
     <!--[if lt IE 9]>
         <script src="js/scripts.js"></script>
     <![endif]-->
+    <?php wp_footer(); ?>
 </body>
 </html>
