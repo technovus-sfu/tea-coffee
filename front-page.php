@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Technovus | Home</title>
+    <title><?php echo get_bloginfo('name'); ?> | Home</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Homepage">
@@ -25,7 +25,7 @@
             <div class="splash-header">
                 <container>
                     <div class="title-head">
-                        <a href="#" class="title">
+                        <a href="<?php echo get_bloginfo('wpurl') ?>" class="title">
                             <icon class="splash-header-icon"></icon>
                             <span><?php echo get_bloginfo('name')?></span>
                         </a>
@@ -34,11 +34,6 @@
                                 <?php $args = array('theme_location' => 'social'); ?>
                                 <?php wp_nav_menu( $args ); ?> 
                             </nav>
-                            <label for="header-main--trigger">
-                                    <span class="header-main--trigger_icon">
-                                        <i class="header-main--cross_hatch">×</i>
-                                    </span>
-                            </label>
                         </div>
                     </div>
                     <nav class="site-links">
@@ -50,17 +45,17 @@
 
             <div class="splash-info">
                 <div class="splash-info-content">
-                    <span><?php echo get_bloginfo('description'); ?></span>
+                    <span><?php echo get_theme_mod('lwp-splash-info-headline'); ?></span>
                     <span class="typewriter">
-                        <p>Community of Enthusiats.</p>
+                        <p><?php echo get_theme_mod('lwp-splash-info-typing-prompt'); ?> 
+                            <span class="txt-rotate" data-period="<?php echo get_theme_mod('lwp-splash-info-typing-speed')?>" 
+                            data-rotate='<?php echo get_theme_mod('lwp-splash-info-typing-array');?>'></span>
+                        <p>
                     </span> 
                 </div>
                 <nav class="shortcut-links">
-                    <a class="nav-item" href="#">WordPress</a>
-                    <a class="nav-item" href="#">Swarmbots</a>
-                    <a class="nav-item" href="#">Biped</a>
-                    <a class="nav-item" href="#">Sixth Sense</a>
-                    <a class="nav-item" href="#">Drawbot</a>
+                    <?php $args = array('theme_location' => 'shortcuts'); ?>
+                    <?php wp_nav_menu( $args ) ?>
                 </nav>
             </div>
 
@@ -75,6 +70,7 @@
             </div> 
         </bubble>
     </section>
+    <script src="<?php echo get_bloginfo( 'template_directory' );?>/js/front-page.js"></script>
     <!--[if lt IE 9]>
         <script src="js/scripts.js"></script>
     <![endif]-->

@@ -13,3 +13,18 @@ Tags: clubs, modern, technology
 This theme, like many other Technovus projects, is licensed under the MIT.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+/* Navigation menus */
+.splash-section ul {
+    margin: 0;
+    padding: 0;
+}
+.splash-section ul li {
+    list-style: none;
+    display: flex;
+}
+.splash-section nav ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
