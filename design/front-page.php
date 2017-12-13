@@ -11,9 +11,9 @@
     <link rel="shortcut icon" href="" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Ubuntu|Kanit|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css?v=1.0">
+    <link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/css/front-page.css">
     
-
+    <?php wp_head(); ?>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
@@ -32,6 +32,7 @@
                         <div class="flex right">
                             <nav class="social-links">
                                 <a class="nav-item" href="#">Github</a>
+                                <a class="nav-item" href="#">Twitter</a>
                                 <a class="nav-item" href="#">Facebook</a>
                             </nav>
                             <label for="header-main--trigger">
@@ -52,7 +53,7 @@
 
             <div class="splash-info">
                 <div class="splash-info-content">
-                    <span>Community of enthusiasts.</span>
+                    <span><?php echo get_bloginfo('description'); ?></span>
                     <span class="typewriter">
                         <p>Technology. Innovation. Us.</p>
                     </span> 
@@ -68,7 +69,7 @@
 
             <div class="splash-footer">
                 <container>
-                    <nav class="footer-links">
+                    <nav class="splash-footer-links">
                         <a class="nav-item" href="#">Technovus &copy;2017</a>
                         <a class="nav-item" href="#">Contact</a>
                         <a class="nav-item" href="#">Join Us</a>

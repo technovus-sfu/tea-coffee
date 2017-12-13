@@ -1,6 +1,6 @@
 /* GENERAL */
 html, body {
-    margin: 0;
+    margin: 0 !important;
     font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
 }
