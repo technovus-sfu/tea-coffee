@@ -51,7 +51,7 @@ icon {
 .right{
     margin-left: auto;
 }
-
+/* genearal */
 /* MAIN */
 /* HEADER */
 .main ul {
@@ -132,7 +132,7 @@ icon {
     height: 80px;
     margin-right: 25px;
 }
-.title-head span {
+.main .title-head span {
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;

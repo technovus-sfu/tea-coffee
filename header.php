@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="main main-header">
+    <header class="main main-header <?php echo 'default'; ?>">
         <container>
             <div class="title-head">
                 <a href="<?php echo get_bloginfo('wpurl') ?>" class="title">

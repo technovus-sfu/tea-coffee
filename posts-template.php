@@ -1,6 +1,7 @@
 <?php
 
-	get_head();
+    get_head();
+    
 ?>
 	<!--INPUT INDEX HEAD HERE-->
 

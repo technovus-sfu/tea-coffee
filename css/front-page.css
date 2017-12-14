@@ -1,53 +1,4 @@
-/* GENERAL */
-html, body {
-    margin: 0 !important;
-    font-family: 'Ubuntu', sans-serif;
-    overflow: hidden;
-}
-a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'Kanit', sans-serif;
-    z-index: 500;
-}
-section {
-    display: flex;
-    height: auto;
-    width: 100%;
-}
-bubble {
-    margin: .5rem;
-    width: 100%;
-    border-radius: .5rem;
-}
-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: relative;
-    width: 100%;
-}
-icon {
-    display: block;
-    border-radius: 3px;
-    background: #6ccce3;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
-}
-.flex {
-    display: flex;
-}
-.right{
-    margin-left: auto;
-}
-label {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    outline: 0 none;
-}
+/* SPLASH */
 /* Navigation menus */
 .splash-section ul {
     margin: 0;
@@ -62,8 +13,7 @@ label {
     width: 100%;
     list-style: none;
 }
-/* general */
-/* SPLASH */
+
 .splash-section {
     height: 100vh;   
 }
@@ -89,23 +39,7 @@ label {
     height: 20px;
 }
 
-.social-links {
-    display: flex;
-    z-index: 500;
-}
-.site-links {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% - 40px);
-    height: 50px;
-    top: 0;
-}
-.site-links a, .social-links a {
-    padding-left: .5rem;
-    padding-right: .5rem;
-}
+
 .splash-header a {
     text-transform: uppercase;
     font-weight: 600;
@@ -117,23 +51,13 @@ label {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.title-head {
-    display: flex;
-    align-items: center;
-    height: 50px;
-}
-.title {
-    display: flex;
-    align-items: center;
-    z-index: 500;
-}
 .splash-icon {
     display: block;
     width: 80px;
     height: 80px;
     margin-right: 25px;
 }
-.title-head span {
+.splash-header .title-head span {
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
@@ -169,14 +93,6 @@ label {
     margin: 0;
     text-align: left;
 }
-/*
-    color: #ffffff;
-    overflow: hidden;
-    border-right: .02em solid rgba(0,0,0,0.5);
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
-}*/
 
 /* shortcuts */
 .shortcut-links {
