@@ -18,7 +18,7 @@
     height: 100vh;   
 }
 .splash-section bubble {
-    /*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
     animation: multi 10s infinite;
 }
 
@@ -69,7 +69,7 @@
 /* content */
 .splash-info {
     display: flex;
-    height: 80%;
+    height: 75%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -79,7 +79,7 @@
     flex-direction: column;
     justify-content: center;
     color: #ffffff;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 100;
     font-family: 'Raleway', sans-serif;
 }

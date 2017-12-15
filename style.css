@@ -26,6 +26,11 @@ a {
     font-family: 'Kanit', sans-serif;
     z-index: 500;
 }
+section {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
 bubble {
     margin: .5rem;
     width: 100%;
