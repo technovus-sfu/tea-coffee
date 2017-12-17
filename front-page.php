@@ -11,7 +11,6 @@
     <link rel="shortcut icon" href="" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Ubuntu|Kanit|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/css/front-page.css">
     
     <?php wp_head(); ?>
     <!--[if lt IE 9]>
@@ -26,7 +25,9 @@
                 <container>
                     <div class="title-head">
                         <a href="<?php echo get_bloginfo('wpurl') ?>" class="title">
-                            <icon class="splash-header-icon"></icon>
+                            <icon class="splash-header-icon">
+                                <?php the_custom_logo(); ?>
+                            <icon>
                             <span><?php echo get_bloginfo('name')?></span>
                         </a>
                         <div class="flex right">
@@ -64,13 +65,17 @@
                     <nav class="splash-footer-links">
                         <?php $args = array('theme_location' => 'footer'); ?>
                         <?php wp_nav_menu( $args ); ?>
-                        <span><icon class="splash-footer-icon"></icon></span>
+                        <span>
+                            <icon class="splash-footer-icon">
+                                <?php the_custom_logo(); ?>
+                            </icon>
+                        </span>
                     </nav>
                 </container>
             </div> 
         </bubble>
     </section>
-    <script src="<?php echo get_bloginfo( 'template_directory' );?>/js/front-page.js"></script>
+    <script src="<?php echo get_bloginfo( 'template_directory' );?>/assets/js/front-page.js"></script>
     <!--[if lt IE 9]>
         <script src="js/scripts.js"></script>
     <![endif]-->

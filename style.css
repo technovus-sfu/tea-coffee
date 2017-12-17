@@ -57,7 +57,189 @@ icon {
     margin-left: auto;
 }
 /* genearal */
-/* MAIN */
+
+/* SPLASH */
+/* Navigation menus */
+.splash-section ul {
+    margin: 0;
+    padding: 0;
+}
+.splash-section ul li {
+    list-style: none;
+    display: flex;
+}
+.splash-section nav ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+.splash-section {
+    height: 100vh;   
+}
+.splash-section bubble {
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    animation: multi 10s infinite;
+}
+
+/* splash-header */
+.splash-header {
+    display: flex;
+    height: 50px;
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+    align-items: center;
+}
+.splash-header container {
+    align-items: center;
+    height: 100%;
+}
+.splash-header-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+.splash-header a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.5s ease 0.02s;
+}
+.splash-header a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.splash-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+}
+.splash-header .title-head span {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Audiowide',cursive;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+/* content */
+.splash-info {
+    display: flex;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.splash-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+}
+.splash-info-content span:first-child {
+    margin-bottom: 10px;
+}
+.splash-info-content span {
+    text-align: center;
+}
+.typewriter p {
+    margin: 0;
+    text-align: left;
+}
+
+/* shortcuts */
+.shortcut-links {
+    display: flex;
+    margin: 60px;
+}
+.shortcut-links a {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    width: 120px;
+    height: 100px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0.5px solid rgba(0,0,0,0.0);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: border 0.5s ease 0.02s;
+}
+.shortcut-links a::after {
+    display: flex;
+    content: 'Explore';
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    border-top: 3px solid #ffffff;
+    margin: 15px auto;
+    align-items: center;
+    padding: 2px;
+    justify-content: center;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.02s;
+}
+.shortcut-links a:hover {
+    border: 0.5px solid rgba(255,255,255, 0.8);
+    transition: border 0.5s ease 0.02s;
+}
+.shortcut-links a:hover::after {
+    opacity: 1;
+    transition: opacity 0.5s ease 0.02s;
+}
+
+/* splash-footer */
+.splash-footer {
+    position: absolute;
+    bottom: calc(.5rem);
+    height: 50px;
+    width: calc(100% - 1rem);
+}
+.splash-footer-links {
+    display: flex;
+}
+.splash-footer-links span {
+    display: flex;
+    align-items: center;
+}
+.splash-footer container {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    width: calc(100% - 40px);
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif;
+}
+.splash-footer-icon {
+    width: 15px;
+    height: 15px;
+}
+.splash-footer-links a::after {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline;
+    content: '\2022';
+    color: rgba(255,255,255,0.5);
+}
+.splash-footer-links span::after {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline;
+}
+/* splash */
+
+/* main */
 /* HEADER */
 .main ul {
     margin: 0;
@@ -146,6 +328,7 @@ icon {
     color: #6ccce3;
 }
 /* header */
+
 /* PAGE-HEADER */
 .page-header bubble {
     display: flex;

@@ -1,3 +1,12 @@
+<?php
+/**
+ * Generic site head for multiple pages
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ */
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,4 +26,5 @@
     <![endif]-->
     <?php wp_head() ?>
 </head>
+
 <body>

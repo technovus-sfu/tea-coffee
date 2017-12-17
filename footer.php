@@ -3,7 +3,11 @@
             <nav class="main-footer-links">
                 <?php $args = array('theme_location' => 'footer'); ?>
                 <?php wp_nav_menu( $args ); ?>
-                <span><icon class="main-footer-icon"></icon></span>
+                <span>
+                    <icon class="main-footer-icon">
+                        <?php the_custom_logo(); ?>
+                    </icon>
+                </span>
             </nav>
         </container>
     </footer>
