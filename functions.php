@@ -4,9 +4,9 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package 
- * @subpackage 
- * @since
+ * @package Wordpress
+ * @subpackage Coffee
+ * @version 1.0
  */
 
 /**
@@ -129,10 +129,10 @@ function cfe_splash_info( $wp_customize ) {
 function custom_excerpt_length( $length ) {
 	return 25;
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 add_action( 'after_setup_theme', 'coffee_setup' );
 add_action( 'wp_enqueue_scripts', 'wordpress_resources');
 add_action('customize_register', 'cfe_splash_info');
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 ?>

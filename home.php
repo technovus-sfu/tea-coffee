@@ -40,9 +40,7 @@ get_template_part( 'template-parts/site/site', 'head' ); ?>
             <posts>
                 <?php get_template_part( 'template-parts/post/content', 'posts' ); ?>
             </posts>
-            <sidebar>
-                SideBar   
-            </sidebar>
+            <?php get_sidebar(); ?>
         </container>
     </section>
 
