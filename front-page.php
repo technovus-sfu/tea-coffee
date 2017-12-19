@@ -4,6 +4,9 @@
  * 
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
+ * @package Wordpress
+ * @subpackage Coffee
+ * @version 1.0
  */
 
 get_template_part( 'template-parts/site/site', 'head' ); ?>
@@ -33,11 +36,11 @@ get_template_part( 'template-parts/site/site', 'head' ); ?>
 
         <div class="splash-info">
             <div class="splash-info-content">
-                <span><?php echo get_theme_mod('lwp-splash-info-headline'); ?></span>
+                <span><?php echo get_theme_mod('cfe-splash-info-headline'); ?></span>
                 <span class="typewriter">
-                    <p><?php echo get_theme_mod('lwp-splash-info-typing-prompt'); ?> 
-                        <span class="txt-rotate" data-period="<?php echo get_theme_mod('lwp-splash-info-typing-speed')?>" 
-                        data-rotate='<?php echo get_theme_mod('lwp-splash-info-typing-array');?>'></span>
+                    <p><?php echo get_theme_mod('cfe-splash-info-typing-prompt'); ?> 
+                        <span class="txt-rotate" data-period="<?php echo get_theme_mod('cfe-splash-info-typing-speed')?>" 
+                        data-rotate='<?php echo get_theme_mod('cfe-splash-info-typing-array');?>'></span>
                     <p>
                 </span> 
             </div>

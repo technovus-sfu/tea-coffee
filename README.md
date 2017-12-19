@@ -1,5 +1,5 @@
-# Technovus Theme :computer:
-Technovus theme for wordpress.org
+# Coffee Theme :coffee:
+Coffee theme for wordpress.org
 
 # Setup
 ## Ubuntu 17.04
