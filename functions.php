@@ -123,6 +123,14 @@ function lwp_splash_info( $wp_customize ) {
     )));
 }
 
+/**
+ * Change excerpt length
+ */
+function custom_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 add_action( 'after_setup_theme', 'technovus_setup' );
 add_action( 'wp_enqueue_scripts', 'wordpress_resources');
 add_action('customize_register', 'lwp_splash_info');

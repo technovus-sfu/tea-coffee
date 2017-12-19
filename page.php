@@ -20,9 +20,7 @@ if (have_posts()) :
 		</bubble>
 	</section>
 
-	<article class="post">
-		<?php the_content(); ?>
-	</article>
+	<?php get_template_part( 'template-parts/page/content', 'page' ); ?>
 
 	<?php endwhile;
 	else :

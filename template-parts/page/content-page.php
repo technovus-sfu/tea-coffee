@@ -7,4 +7,9 @@
  */
 
 ?>
-<p>Page Content</p>
+
+<section class="page-content content">
+    <container>
+        <?php the_content(); ?>
+    </container>
+</section>

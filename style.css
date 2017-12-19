@@ -30,9 +30,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 /* 404 */
 /* GENERAL */
-html, body {
-    margin: 0 !important;
-    font-family: 'Ubuntu', sans-serif;
+html, body, p, h1, h2, h3 {
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -74,15 +73,15 @@ icon {
 
 /* SPLASH */
 /* Navigation menus */
-.splash-section ul {
+.splash-section ul, .news-header-section ul {
     margin: 0;
     padding: 0;
 }
-.splash-section ul li {
+.splash-section ul li, .news-header-section ul li {
     list-style: none;
     display: flex;
 }
-.splash-section nav ul {
+.splash-section nav ul, .news-header-section nav ul {
     display: flex;
     width: 100%;
     list-style: none;
@@ -97,30 +96,28 @@ icon {
 }
 
 /* splash-header */
-.splash-header {
+.splash-header, .news-header {
     display: flex;
     height: 50px;
-    /*padding-left: 20px;*/
-    /*padding-right: 20px;*/
     align-items: center;
 }
-.splash-header container {
+.splash-header container, .news-header container {
     align-items: center;
     height: 100%;
 }
 
-.splash-header a {
+.splash-header a, .news-header a {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 13px;
     letter-spacing: 1px;
     transition: all 0.5s ease 0.02s;
 }
-.splash-header a:hover {
+.splash-header a:hover, .news-header a:hover {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.splash-header .title-head span {
+.splash-header .title-head span, .news-header .title-head span {
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
@@ -242,13 +239,14 @@ icon {
 .main-header {
     display: flex;
     height: 50px;
-    /*padding-left: 20px;*/
-    /*padding-right: 20px;*/
     align-items: center;
 }
 .main-header container {
     align-items: center;
     height: 100%;
+}
+.main-header .current-menu-item a {
+    color: #6ccce3;
 }
 
 .social-links {
@@ -308,7 +306,7 @@ icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
     height: 150px;
 }
 .page-header bubble h1 {
@@ -320,12 +318,6 @@ icon {
     font-family: 'Audiowide', sans-serif;
 }
 /* page-header*/
-
-/* POSTS */
-.post a {
-    color: #0073A9;
-}
-/* posts */
 
 /* FOOTER */
 .footer-icon {
@@ -367,6 +359,147 @@ light {
     animation: multi 5s infinite;
 }
 /* footer*/
+
+/* INDEX */
+thumbnail {
+    display: flex;
+    background: red;
+}
+.news-header-section {
+    flex-direction: column;
+    height: 350px;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+.news-header-section .current-menu-item a {
+    color: rgba(0, 0, 0, 0.5);
+}
+.header-content {
+    height: 300px;
+}
+.header-content container {
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+.page-title {
+    margin-top: 10px;
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Audiowide', cursive;
+}
+.page-title span {
+    font-size: 10px;
+    margin-left: 10px;
+    color: gold;
+}
+.featured {
+    height: 230px;
+    color: #fff;
+    background: none;
+    padding: 0;
+}
+.featured-thumbnail {
+    width: 315px;
+    height: 200px;
+    background: pink;
+    margin-right: 20px;
+}
+.featured-content {
+    width: auto;
+    color: #fff;
+}
+.featured .post-title {
+    color: #fff;
+    margin: 5px 0px;
+    font-size: 60px;
+    font-weight: 100;
+    font-family: 'Audiowide', cursive;
+}
+
+.news-page-content-section {
+    position: relative;
+    top: -30px;
+}
+.news-page-content-section container {
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+}
+.news-page-content-section article container {
+    display: block;
+    color: #444;
+    margin: 0;
+    width: inherit;
+    transition: all 0.5s ease 0.02s;
+}
+posts {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 0 2rem;
+}
+.post-title {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Audiowide', cursive;
+    margin-top: 5px;
+    color: #555;
+    transition: transform .3s cubic-bezier(.5,2,.5,.7);
+}
+article {
+    padding: 1rem 2rem;
+    background: #fff;
+    border-radius: .3rem;
+    margin-bottom: 20px;
+}
+article a container:hover .post-title {
+    transform: scale(1.03);
+}
+sidebar {
+    display: flex;
+    width: 25%;
+    padding: 1rem;
+    background: #cdcdcd;
+    min-height: 40vh;
+    height: 40vh;
+    border-radius: .3rem;
+}
+.content {
+    line-height: 25px;
+    max-width: 90%;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* index*/
+
+/* PAGE */
+.page-content {
+    width: 80%;
+    margin: 50px auto;
+    min-height: 100vh;
+    height: auto;
+}
+/* page */
+
+/* SINGLE */
+.news-single-page-content-section container {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+}
+.news-single-page-content-section posts {
+    width: 80%;
+}
+.news-single-page-content-section sidebar {
+    width: 20%;
+}
+.single-post-content {
+    max-width: 100%;
+}
+/* single */
 
 /* ANIMATIONS */
 /* Color effect */
