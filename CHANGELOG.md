@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased - 2017-DEC-XX
 ### Added
+- TBA release
 - Baseline theme template files
 - README file
 - A PULL REQUEST template
