@@ -8,13 +8,11 @@
 
 get_template_part( 'template-parts/site/site', 'head' ); ?>
 
-<header class="main main-header <?php echo 'default-header'; ?>">
+<header class="main main-header">
     <container>
         <div class="title-head">
             <a href="<?php echo get_bloginfo('wpurl') ?>" class="title">
-                <icon class="main-header-icon">
-                    <?php the_custom_logo(); ?>
-                </icon>
+                <?php get_template_part( 'template-parts/site/logo', 'header' ); ?>
                 <span><?php echo get_bloginfo('name')?></span>
             </a>
             <div class="flex right">

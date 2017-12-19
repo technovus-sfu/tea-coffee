@@ -6,4 +6,27 @@
  *
  */
 ?>
-<p>404</p>
+<?php 
+/**
+ * Front page of website
+ * 
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ */
+
+get_template_part( 'template-parts/site/site', 'head' ); ?>
+
+<section class="splash-section">
+    <bubble>
+        <div class="error splash-info">
+            <div class="splash-info-content">
+                <div class="heading">404</div>
+                <div class="text">
+                    These are not the droids youre looking for. Try escaping to <a href="<?php echo get_bloginfo('wpurl'); ?>">Home</a>.
+                </div>
+            </div>
+        </div>
+    </bubble>
+</section>
+</body>
+</html>

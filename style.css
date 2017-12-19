@@ -14,7 +14,21 @@ This theme, like many other Technovus projects, is licensed under the MIT.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-
+/* 404 */
+.error .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 300px;
+    margin: 0;
+}
+.error .text {
+    font-size: 20px;
+}
+.error a {
+    text-decoration: underline;
+}
+/* 404 */
 /* GENERAL */
 html, body {
     margin: 0 !important;
@@ -94,11 +108,6 @@ icon {
     align-items: center;
     height: 100%;
 }
-.splash-header-icon {
-    width: 20px;
-    height: 20px;
-}
-
 
 .splash-header a {
     text-transform: uppercase;
@@ -111,12 +120,6 @@ icon {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.splash-icon {
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin-right: 25px;
-}
 .splash-header .title-head span {
     font-size: 13px;
     text-transform: uppercase;
@@ -139,7 +142,7 @@ icon {
     flex-direction: column;
     justify-content: center;
     color: #ffffff;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 100;
     font-family: 'Raleway', sans-serif;
 }
@@ -205,13 +208,6 @@ icon {
     height: 50px;
     width: calc(100% - 1rem);
 }
-.splash-footer-links {
-    display: flex;
-}
-.splash-footer-links span {
-    display: flex;
-    align-items: center;
-}
 .splash-footer container {
     align-items: center;
     height: 100%;
@@ -221,26 +217,14 @@ icon {
     font-size: 15px;
     font-family: 'Kanit', sans-serif;
 }
-.splash-footer-icon {
-    width: 15px;
-    height: 15px;
-}
-.splash-footer-links a::after {
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline;
-    content: '\2022';
-    color: rgba(255,255,255,0.5);
-}
-.splash-footer-links span::after {
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline;
-}
 /* splash */
 
 /* main */
 /* HEADER */
+.header-icon {
+    width: 20px;
+    height: 20px;
+}
 .main ul {
     margin: 0;
     padding: 0;
@@ -265,10 +249,6 @@ icon {
 .main-header container {
     align-items: center;
     height: 100%;
-}
-.main-header-icon {
-    width: 20px;
-    height: 20px;
 }
 
 .social-links {
@@ -313,12 +293,6 @@ icon {
     align-items: center;
     z-index: 500;
 }
-.main-icon {
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin-right: 25px;
-}
 .main .title-head span {
     font-size: 13px;
     text-transform: uppercase;
@@ -354,17 +328,14 @@ icon {
 /* posts */
 
 /* FOOTER */
+.footer-icon {
+    width: 15px;
+    height: 15px;
+}
 .main-footer {
     height: 50px;
     margin-top: 5rem;
     background: rgba(0,0,0,0.8)
-}
-.main-footer-links {
-    display: flex;
-}
-.main-footer-links span {
-    display: flex;
-    align-items: center;
 }
 .main-footer container {
     align-items: center;
@@ -375,21 +346,19 @@ icon {
     font-size: 15px;
     font-family: 'Kanit', sans-serif;
 }
-.main-footer-icon {
-    width: 15px;
-    height: 15px;
+.footer-links {
+    display: flex;
 }
-.main-footer-links a::after {
+.footer-links a::after {
     padding-left: 15px;
     padding-right: 15px;
     display: inline;
     content: '\2022';
     color: rgba(255,255,255,0.5);
 }
-.main-footer-links span::after {
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline;
+.footer-links span {
+    font-family: 'Kanit', sans-serif;
+    color: #ffffff;
 }
 light {
     display: flex;

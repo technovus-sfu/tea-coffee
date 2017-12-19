@@ -1,13 +1,9 @@
     <footer class="main main-footer">
         <container>
-            <nav class="main-footer-links">
+            <nav class="footer-links">
                 <?php $args = array('theme_location' => 'footer'); ?>
                 <?php wp_nav_menu( $args ); ?>
-                <span>
-                    <icon class="main-footer-icon">
-                        <?php the_custom_logo(); ?>
-                    </icon>
-                </span>
+                <?php get_template_part( 'template-parts/site/logo', 'footer' ); ?>
             </nav>
         </container>
     </footer>
