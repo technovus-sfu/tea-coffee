@@ -36,7 +36,7 @@ get_template_part( 'template-parts/site/site', 'head' ); ?>
         </section>
     </section>
     <section class="news-page-content-section">
-        <container>
+        <container class="clearfix">
             <posts>
                 <?php get_template_part( 'template-parts/post/content', 'posts' ); ?>
             </posts>

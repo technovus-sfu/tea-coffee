@@ -435,9 +435,9 @@ thumbnail {
     transition: all 0.5s ease 0.02s;
 }
 posts {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
+    float: left;
+    display: block;
+    width: 66%;
     padding: 0 2rem;
 }
 .post-title {
@@ -459,8 +459,9 @@ article a container:hover .post-title {
     transform: scale(1.03);
 }
 sidebar {
-    display: flex;
-    width: 25%;
+    float: right;
+    display: block;
+    width: 30%;
     padding: 1rem;
     background: #cdcdcd;
     min-height: 40vh;

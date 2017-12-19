@@ -5,14 +5,6 @@
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
  */
-?>
-<?php 
-/**
- * Front page of website
- * 
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- */
 
 get_template_part( 'template-parts/site/site', 'head' ); ?>
 
