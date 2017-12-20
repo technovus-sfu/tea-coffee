@@ -458,16 +458,6 @@ article {
 article a container:hover .post-title {
     transform: scale(1.03);
 }
-sidebar {
-    float: right;
-    display: block;
-    width: 30%;
-    padding: 1rem;
-    background: #cdcdcd;
-    min-height: 40vh;
-    height: 40vh;
-    border-radius: .3rem;
-}
 .content {
     line-height: 25px;
     max-width: 90%;
@@ -502,6 +492,51 @@ sidebar {
     margin-top: 50px;
 }
 /* single */
+
+/* SIDEBAR */
+sidebar {
+    float: right;
+    display: block;
+    width: 30%;
+    padding: 1rem;
+    background: #57C4C9;
+    min-height: 40vh;
+    height: fit-content;
+    border-radius: .3rem;
+}
+sidebar li {
+    list-style: none;
+}
+sidebar .widgettitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #444;
+}
+sidebar ul {
+    padding: 0;
+    padding-left: 15px;
+}
+sidebar ul li {
+    margin: 15px auto;
+}
+sidebar .widget-item::after {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    margin: 30px 0;
+}
+sidebar .widget-item:last-child::after {
+    display: none
+}
+sidebar .post-date {
+    color: #555;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+}
+
+/* sidebar */
 
 /* ANIMATIONS */
 /* Color effect */
