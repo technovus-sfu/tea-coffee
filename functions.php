@@ -130,23 +130,24 @@ function custom_excerpt_length( $length ) {
 	return 25;
 }
 
-add_action( 'after_setup_theme', 'coffee_setup' );
-add_action( 'wp_enqueue_scripts', 'wordpress_resources');
-add_action('customize_register', 'cfe_splash_info');
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
-//add widget locations for word press
+/** 
+ * Add widget locations for word press
+ */
 
 function WidgetLocation(){
     register_sidebar( array (
 
         'name'=> 'Sidebar', //human friendly widget location
-        'id'=>'sidebar1' //for computer
+        'id'=>'sidebar1', //for computer
+        'before_widget'=>'<div class="widget-item">',
+        'after_widget' => '</div>'
         ));
-
-
 }
 
+add_action( 'after_setup_theme', 'coffee_setup' );
+add_action( 'wp_enqueue_scripts', 'wordpress_resources');
+add_action('customize_register', 'cfe_splash_info');
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 add_action('widgets_init', 'WidgetLocation');
 
 ?>
