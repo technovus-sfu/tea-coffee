@@ -135,4 +135,18 @@ add_action( 'wp_enqueue_scripts', 'wordpress_resources');
 add_action('customize_register', 'cfe_splash_info');
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+//add widget locations for word press
+
+function WidgetLocation(){
+    register_sidebar( array (
+
+        'name'=> 'Sidebar', //human friendly widget location
+        'id'=>'sidebar1' //for computer
+        ));
+
+
+}
+
+add_action('widgets_init', 'WidgetLocation');
+
 ?>
