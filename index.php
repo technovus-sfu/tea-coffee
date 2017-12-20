@@ -10,7 +10,7 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Wordpress
- * @subpackage Coffee
+ * @subpackage Tea Coffee
  * @version 1.0
  */
 

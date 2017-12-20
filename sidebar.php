@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Wordpress
- * @subpackage Coffee
+ * @subpackage Tea Coffee
  * @version 1.0.0
  */
 

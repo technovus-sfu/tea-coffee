@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - XXXX-XXX-XX
 ### Added
+- Renamed theme Tea Coffee
 
 ## 1.0.0 - 2017-DEC-19
 ### Added

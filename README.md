@@ -1,5 +1,5 @@
-# Coffee Theme :coffee:
-Coffee theme for wordpress.org
+# Tea Coffee Theme :tea: :coffee:
+Tea Coffee theme for wordpress.org
 
 # Setup
 ## Ubuntu 17.04
