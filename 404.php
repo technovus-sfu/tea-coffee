@@ -4,6 +4,9 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
+ * @package Wordpress
+ * @subpackage Coffee
+ * @version 1.0.0
  */
 
 get_template_part( 'template-parts/site/site', 'head' ); ?>

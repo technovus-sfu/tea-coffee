@@ -3,7 +3,10 @@
  * Template part for displaying post list
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
- *
+ * 
+ * @package Wordpress
+ * @subpackage Coffee
+ * @version 1.0.0
  */
 ?>
 

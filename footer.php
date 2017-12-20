@@ -1,4 +1,16 @@
-    <footer class="main main-footer">
+<?php 
+/**
+ * Main footer of website
+ * 
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Wordpress
+ * @subpackage Coffee
+ * @version 1.0.0
+ */
+?>
+
+<footer class="main main-footer">
         <container>
             <nav class="footer-links">
                 <?php $args = array('theme_location' => 'footer'); ?>

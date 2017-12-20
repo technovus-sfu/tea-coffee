@@ -5,10 +5,12 @@ The format of this change log is based on [Keep a Changelog](http://keepachangel
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 
-## Unreleased - 2017-DEC-XX
+## [Unreleased] - XXXX-XXX-XX
 ### Added
-- TBA release
-- Baseline theme template files
+
+## 1.0.0 - 2017-DEC-19
+### Added
+- Coffee theme name
 - README file
 - A PULL REQUEST template
 - An ISSUE template

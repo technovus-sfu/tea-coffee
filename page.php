@@ -4,11 +4,12 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
+ * @package Wordpress
+ * @subpackage Coffee
+ * @version 1.0.0
  */
-?>
-<?php
 
-get_header();?>
+get_header(); ?>
 
 <?php
 if (have_posts()) :

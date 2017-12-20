@@ -4,6 +4,9 @@
  * 
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
+ * @package Wordpress
+ * @subpackage Coffee
+ * @version 1.0.0
  */
 
 get_template_part( 'template-parts/site/site', 'head' ); ?>
