@@ -18,7 +18,7 @@
                 <a class="site-name" href="<? echo get_bloginfo('wpurl') ?>"><? echo get_bloginfo('name')?></a>
             </div>
             <div class="mobile-nav right">
-                <a href="#">
+                <a id="mobile-nav-button" href="#">
                 <span><i class="mobile-nav-icon"></i></span>
                 </a>
             </div>

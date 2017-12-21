@@ -18,7 +18,9 @@
                 <a class="site-name" href="<? echo get_bloginfo('wpurl') ?>"><? echo get_bloginfo('name')?></a>
             </div>
             <div class="mobile-nav right">
-                <span><i class="mobile-nav-icon"></i></span>
+                <a id="mobile-nav-button" href="#">
+                    <span><i class="mobile-nav-icon"></i></span>
+                </a>
             </div>
             <div class="header-widget-location right">
                 <? dynamic_sidebar('header1'); ?>
