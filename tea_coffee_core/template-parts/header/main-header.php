@@ -1,6 +1,6 @@
 <?
 /**
- * The template for displaying the header for non white pages
+ * The template for displaying the header for white pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -10,7 +10,7 @@
  */
 ?>
 
-<header class="analog-header site-header">
+<header class="main main-header site-header">
     <container>
         <div class="site-header-bar">
             <div class="site-title">
@@ -23,7 +23,7 @@
         </div>
         <nav class="site-links">
             <? $args = array('theme_location' => 'primary'); ?>
-            <? wp_nav_menu( $args ); ?> 
+            <? wp_nav_menu( $args ); ?>
         </nav>
     </container>
 </header>

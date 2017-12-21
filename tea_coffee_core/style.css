@@ -275,6 +275,16 @@ section nav ul, .main nav ul {
     padding-left: .5rem;
     padding-right: .5rem;
 }
+
+/* header widget */
+header .widget-item ul{
+    display: flex;
+}
+header .widget-item a {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
 /* header */
 
 /* PAGE-HEADER */
