@@ -31,9 +31,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* 404 */
 
 /* GENERAL */
+body {
+    min-width: 360px;
+}
 html, body, p, h1, h2, h3 {
     margin: 0;
-    transition: all 0.5s ease 0.02s;
+    transition: transform 0.5s ease 0.02s;
 }
 a {
     text-decoration: none;
@@ -538,6 +541,15 @@ light {
     width: inherit;
     transition: all 0.5s ease 0.02s;
 }
+
+.post-title.archive {
+    background: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+    color: #57c4ca;
+}
+
+/* posts */
 posts {
     float: left;
     display: block;
@@ -552,6 +564,9 @@ posts {
     margin-top: 5px;
     color: #555;
     transition: transform .3s cubic-bezier(.5,2,.5,.7);
+}
+.post-info {
+    color: #999
 }
 posts article::after {
     content: '';
@@ -657,26 +672,27 @@ sidebar .post-date {
 /*SCROLL BAR*/
 ::-webkit-scrollbar {
     width: 1px;
-  }
-  ::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
     box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(0,0,0,0.8); 
     -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
     box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
-  }
-  ::-webkit-scrollbar-thumb:window-inactive {
+}
+::-webkit-scrollbar-thumb:window-inactive {
     background: rgb(255, 255, 255, 0.5); 
-  }
-  /* scroll bar */
+}
+/* scroll bar */
 
-/* ANIMATIONS */
+
+  /* ANIMATIONS */
 /* Color effect */
 @keyframes multi {
     0% {
@@ -732,9 +748,33 @@ sidebar .post-date {
         font-size: 10px;
     }
     .splash-info-content {
-        font-size: 25px;
+        font-size: 35px;
     }
     .shortcut-links {
         margin: 40px;
+    }
+
+    .news-page-content-section container {
+        display: block;
+        width: 100%;
+    }
+    .news-single-page-content-section posts, posts {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .news-single-page-content-section sidebar, sidebar {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .splash-info-content {
+        font-size: 25px;
     }
 }

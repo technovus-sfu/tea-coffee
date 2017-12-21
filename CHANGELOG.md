@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Repository heirarchy and layout
 - README instructions
 - Consolidated similar styling instructions
+- Screenshot
 
 ### Added
 - Logo display support
@@ -19,6 +20,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - gitignore
 - Support for sticky posts
 - Header widget support
+- Mobile Navigation
+- Archive template
+- Post metadata
+- Mobile responsive support
 
 ### Removed
 - Bash uploader file 

@@ -16,12 +16,14 @@ if (have_posts()) :
 ?>
 
 <article>
-    <container>
-        <h2 class="post-title"><? the_title(); ?></h2>
-        <div class="single-post-content content">
-                <? the_content(); ?>
-        </div>
-    </container>
+    <a href="<? the_permalink(); ?>">
+        <container>
+            <h2 class="post-title"><? the_title(); ?></h2>
+            <div class="single-post-content content">
+                <? the_excerpt(); ?>
+            </div>
+        </container>
+    </a>
 </article>
     
 <? endwhile;
