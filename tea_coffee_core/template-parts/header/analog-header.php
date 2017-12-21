@@ -17,7 +17,12 @@
                 <? get_template_part( 'template-parts/site/logo', 'header' ); ?>
                 <a class="site-name" href="<? echo get_bloginfo('wpurl') ?>"><? echo get_bloginfo('name')?></a>
             </div>
-            <div class="flex right">
+            <div class="mobile-nav right">
+                <a href="#">
+                <span><i class="mobile-nav-icon"></i></span>
+                </a>
+            </div>
+            <div class="header-widget-location right">
                 <? dynamic_sidebar('header1'); ?>
             </div>
         </div>
@@ -27,3 +32,4 @@
         </nav>
     </container>
 </header>
+

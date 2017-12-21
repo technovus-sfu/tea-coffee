@@ -1,3 +1,10 @@
+/**
+ * Types front page content
+ * @param {*} el 
+ * @param {*} toRotate 
+ * @param {*} period 
+ */
+
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;

@@ -69,11 +69,65 @@ container {
     align-items: center;
     justify-content: center;
 }
-.flex {
-    display: flex;
-}
-.right{
+.right {
     margin-left: auto;
+}
+
+/* mobile navigation */
+.mobile-nav {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 80%;
+}
+.mobile-nav span{
+    display: block;
+    position: relative;
+    transition: opacity 300ms ease-in-out;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+}
+.mobile-nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 38%;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background: #ffffff;
+}
+.mobile-nav-icon::before, .mobile-nav-icon::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 500;
+    content: '';
+    transition: all 300ms ease-in-out;
+    background: #ffffff;
+}   
+.mobile-nav-icon::before {
+    top: -5px;
+}
+.mobile-nav-icon::after {
+    top: 5px;
+}
+
+.mobile-nav-view {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: #000;
+    opacity: 0.8;
+    z-index: 1000;
+    overflow: hidden;
 }
 /* general */
 
@@ -279,6 +333,10 @@ section nav ul, .main nav ul {
 }
 
 /* header widget */
+.mobile-nav .widget-item {
+    display: flex;
+    align-content: center;
+}
 header .widget-item ul{
     display: flex;
 }
@@ -604,8 +662,11 @@ sidebar .post-date {
 
 /*------------MEDIA------------------*/
 @media screen and (max-width:780px) {
-    .right, .site-links {
+    .header-widget-location, .site-links {
         display: none;
+    }
+    .mobile-nav {
+        display: flex;
     }
     .shortcut-links a {
         width: 80px;
@@ -622,9 +683,6 @@ sidebar .post-date {
 }
 
 @media screen and (max-width:690px) {
-    .right, .site-links {
-        display: none;
-    }
     .shortcut-links a {
         width: 80px;
         height: 75px;

@@ -30,3 +30,11 @@
 </head>
 
 <body>
+<script src="<? echo get_bloginfo( 'template_directory' );?>/assets/js/mobile.js"></script>
+<div class="mobile-nav-view">
+    <nav class="composite-mobile-navigation">
+        <? $args = array('theme_location' => 'primary'); ?>
+        <? wp_nav_menu( $args ); ?> 
+        <? dynamic_sidebar('header1'); ?>
+    </nav>
+</div>
