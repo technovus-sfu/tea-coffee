@@ -33,6 +33,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* GENERAL */
 html, body, p, h1, h2, h3 {
     margin: 0;
+    transition: all 0.5s ease 0.02s;
 }
 a {
     text-decoration: none;
@@ -87,6 +88,8 @@ section ul li, .main ul li {
 }
 section nav ul, .main nav ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     list-style: none;
 }
@@ -142,8 +145,7 @@ section nav ul, .main nav ul {
     font-size: 13px;
     text-transform: uppercase;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 0 10px;
     border: 0.5px solid rgba(0,0,0,0.0);
     border-radius: 5px;
     letter-spacing: 1px;
@@ -552,6 +554,28 @@ sidebar .post-date {
 
 /* sidebar */
 
+/*SCROLL BAR*/
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgb(255, 255, 255, 0.5); 
+  }
+  /* scroll bar */
+
 /* ANIMATIONS */
 /* Color effect */
 @keyframes multi {
@@ -575,5 +599,42 @@ sidebar .post-date {
     }
     100% {
         background:#aad4dd;
+    }
+}
+
+/*------------MEDIA------------------*/
+@media screen and (max-width:780px) {
+    .right, .site-links {
+        display: none;
+    }
+    .shortcut-links a {
+        width: 80px;
+        height: 75px;
+        margin: 10px;
+        font-size: 10px;
+    }
+    .splash-info {
+        height: 75%;
+    }
+    .shortcut-links {
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .right, .site-links {
+        display: none;
+    }
+    .shortcut-links a {
+        width: 80px;
+        height: 75px;
+        margin: 10px;
+        font-size: 10px;
+    }
+    .splash-info-content {
+        font-size: 25px;
+    }
+    .shortcut-links {
+        margin: 40px;
     }
 }

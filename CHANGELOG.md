@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Page content links bug fix
 - gitignore
 - Support for sticky posts
+- Header widget support
 
 ### Removed
 - Bash uploader file 
