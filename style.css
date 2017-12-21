@@ -473,6 +473,9 @@ article a container:hover .post-title {
     min-height: 100vh;
     height: auto;
 }
+.page-content a {
+    color: #6ccce3;
+}
 /* page */
 
 /* SINGLE */

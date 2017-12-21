@@ -6,8 +6,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ## [Unreleased] - XXXX-XXX-XX
+### Changed
+- Theme name to Tea Coffee
+- Index display format
+
 ### Added
-- Renamed theme Tea Coffee
+- Page content links bug fix
+- gitignore
+
+### Removed
+- Bash uploader file 
+
 
 ## 1.0.0 - 2017-DEC-19
 ### Added
