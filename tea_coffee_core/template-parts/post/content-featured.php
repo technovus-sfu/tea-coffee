@@ -1,4 +1,4 @@
-<?php
+<?
 /**
  * Template part for displaying sticky post
  *
@@ -20,11 +20,11 @@ if ( isset($sticky[0]) ) : ?>
 
 <div class="news-page-title">News<span>Featured</span></div>            
 <article class="featured">
-    <a href="<?php $the_query->the_permalink(); ?>">
+    <a href="<? $the_query->the_permalink(); ?>">
         <container class="featured-content">
 
-            <p class="featured-title post-title"><?php $the_query->the_title(); ?></p>
-            <div class="post-excerpt content"><?php $the_query->the_excerpt(); ?></div>
+            <p class="featured-title post-title"><? $the_query->the_title(); ?></p>
+            <div class="post-excerpt content"><? $the_query->the_excerpt(); ?></div>
 
         </container>
     </a>

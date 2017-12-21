@@ -1,4 +1,4 @@
-<?php
+<?
 /**
  * The sidebar containing the main widget area
  *
@@ -15,5 +15,5 @@ if ( ! is_active_sidebar( 'sidebar1' ) ) {
 ?>
 
 <sidebar>
-  <?php dynamic_sidebar('sidebar1') ?>
+  <? dynamic_sidebar('sidebar1') ?>
 </sidebar>

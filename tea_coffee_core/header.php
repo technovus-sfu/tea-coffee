@@ -1,4 +1,4 @@
-<?php
+<?
 /**
  * Main site header
  *
@@ -6,28 +6,10 @@
  *
  * @package Wordpress
  * @subpackage Tea Coffee
- * @version 1.0.0
+ * @version 1.2.0
  */
 
-get_template_part( 'template-parts/site/site', 'head' ); ?>
+get_template_part( 'template-parts/site/site', 'head' ); // get page head
 
-<header class="main main-header site-header">
-    <container>
-        <div class="site-header-bar">
-            <div class="site-title">
-                <?php get_template_part( 'template-parts/site/logo', 'header' ); ?>
-                <a class="site-name" href="<?php echo get_bloginfo('wpurl') ?>"><?php echo get_bloginfo('name')?></a>
-            </div>
-            <div class="flex right">
-                <nav class="social-links">
-                    <?php $args = array('theme_location' => 'social'); ?>
-                    <?php wp_nav_menu( $args ); ?> 
-                </nav>
-            </div>
-        </div>
-        <nav class="site-links">
-            <?php $args = array('theme_location' => 'primary'); ?>
-            <?php wp_nav_menu( $args ); ?>
-        </nav>
-    </container>
-</header>
+get_template_part( 'template-parts/header/main', 'header' ); // get main header content
+?>

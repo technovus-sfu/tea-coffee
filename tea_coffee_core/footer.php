@@ -1,4 +1,4 @@
-<?php 
+<? 
 /**
  * Main footer of website
  * 
@@ -13,9 +13,9 @@
 <footer class="main main-footer">
     <container>
         <nav class="footer-links">
-            <?php $args = array('theme_location' => 'footer'); ?>
-            <?php wp_nav_menu( $args ); ?>
-            <?php get_template_part( 'template-parts/site/logo', 'footer' ); ?>
+            <? $args = array('theme_location' => 'footer'); ?>
+            <? wp_nav_menu( $args ); ?>
+            <? get_template_part( 'template-parts/site/logo', 'footer' ); ?>
         </nav>
     </container>
 </footer>
@@ -23,6 +23,6 @@
 <!--[if lt IE 9]>
     <script src="js/scripts.js"></script>
 <![endif]-->
-<?php wp_footer(); ?>
+<? wp_footer(); ?>
 </body>
 </html>

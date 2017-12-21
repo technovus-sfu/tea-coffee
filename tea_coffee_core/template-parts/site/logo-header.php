@@ -1,4 +1,4 @@
-<?php
+<?
 /**
  * Template part for displaying header logo
  *
@@ -10,4 +10,4 @@
  */
 ?>
 
-<?php the_custom_logo(); ?>
+<? the_custom_logo(); ?>

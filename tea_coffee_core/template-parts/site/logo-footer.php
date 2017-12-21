@@ -1,4 +1,4 @@
-<?php
+<?
 /**
  * Template part for displaying footer logo
  *

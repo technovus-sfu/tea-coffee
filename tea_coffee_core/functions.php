@@ -1,4 +1,4 @@
-<?php
+<?
 /**
  * TBA functions and definitions
  *
@@ -136,12 +136,18 @@ function custom_excerpt_length( $length ) {
 
 function WidgetLocation(){
     register_sidebar( array (
-
         'name'=> 'Sidebar', //human friendly widget location
         'id'=>'sidebar1', //for computer
         'before_widget'=>'<div class="widget-item">',
         'after_widget' => '</div>'
-        ));
+    ));
+
+    register_sidebar( array (
+        'name'=> 'Header', //human friendly widget location
+        'id'=>'header1', //for computer
+        'before_widget'=>'<div class="widget-item">',
+        'after_widget' => '</div>'
+    ));
 }
 
 add_action( 'after_setup_theme', 'tea_coffee_setup' );

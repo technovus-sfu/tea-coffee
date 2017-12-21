@@ -1,4 +1,4 @@
-<?php
+<?
 /**
  * The template for displaying 404 pages (not found)
  *
@@ -17,7 +17,7 @@ get_template_part( 'template-parts/site/site', 'head' ); ?>
             <div class="splash-info-content">
                 <div class="heading">404</div>
                 <div class="text">
-                    These are not the droids youre looking for. Try escaping to <a href="<?php echo get_bloginfo('wpurl'); ?>">Home</a>.
+                    These are not the droids youre looking for. Try escaping to <a href="<? echo get_bloginfo('wpurl'); ?>">Home</a>.
                 </div>
             </div>
         </div>

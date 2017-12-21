@@ -1,4 +1,4 @@
-<?php 
+<? 
 /**
  * Site blog/news page
  * 
@@ -16,17 +16,17 @@ get_template_part( 'template-parts/site/site', 'head' ); ?>
 
         <section class="news-header-content">
             <container>
-                <?php get_template_part( 'template-parts/post/content', 'featured' ); ?>
+                <? get_template_part( 'template-parts/post/content', 'featured' ); ?>
             </container>
         </section>
     </section>
     <section class="news-page-content-section">
         <container class="clearfix">
             <posts>
-                <?php get_template_part( 'template-parts/post/content', 'posts' ); ?>
+                <? get_template_part( 'template-parts/post/content', 'posts' ); ?>
             </posts>
-            <?php get_sidebar(); ?>
+            <? get_sidebar(); ?>
         </container>
     </section>
 
-<?php get_footer(); ?>
+<? get_footer(); ?>
