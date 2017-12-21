@@ -5,8 +5,8 @@ The format of this change log is based on [Keep a Changelog](http://keepachangel
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - XXXX-XXX-XX
-### Added
-- 
+### Changed
+- Fixed version number in WordPress
 
 ## [1.2.0] - 2017-DEC-21
 ### Changed
