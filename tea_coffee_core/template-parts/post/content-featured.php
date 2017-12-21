@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying featured post
+ * Template part for displaying sticky post
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -8,39 +8,30 @@
  * @subpackage Tea Coffee
  * @version 1.0.0
  */
-?>
 
-<?php 
-// the query
-$the_query = new WP_Query( array(
-    'posts_per_page' => 1,
-)); 
-?>
+$sticky = get_option( 'sticky_posts' );
+$args = array(
+	'posts_per_page' => 1,
+	'post__in'  => $sticky,
+	'ignore_sticky_posts' => 1
+);
+$the_query = new WP_Query( $args );
+if ( isset($sticky[0]) ) : ?>
 
-<?php if ( $the_query->have_posts() ) : ?>
-<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-<div class="page-title">News<span>Recent</span></div>            
+<div class="news-page-title">News<span>Featured</span></div>            
 <article class="featured">
-    <a href="<?php the_permalink(); ?>">
+    <a href="<?php $the_query->the_permalink(); ?>">
         <container class="featured-content">
 
-            <p class="featured-title post-title"><?php the_title(); ?></p>
-            <div class="post-excerpt content"><?php the_excerpt(); ?></div>
+            <p class="featured-title post-title"><?php $the_query->the_title(); ?></p>
+            <div class="post-excerpt content"><?php $the_query->the_excerpt(); ?></div>
 
         </container>
     </a>
 </article>
 
-<?php endwhile; ?>
-<?php wp_reset_postdata(); ?>
-<?php else : ?>
+<? else :?>
 
-<div class="page-title">News</div>            
-<article class="featured">
-    <container class="featured-content">
-        <p class="featured-title post-title">No News</p>
-    </container>
-</article>
+<div class="news-page-title no-featured">News</div>            
 
-<?php endif; ?>
+<? endif; ?>

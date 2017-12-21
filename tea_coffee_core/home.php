@@ -6,33 +6,15 @@
  *
  * @package Wordpress
  * @subpackage Tea Coffee
- * @version 1.0.0
+ * @version 1.2.0
  */
 
 get_template_part( 'template-parts/site/site', 'head' ); ?>
 
     <section class="news-header-section">
-		<div class="news-header">
-			<container>
-				<div class="title-head">
-					<a href="<?php echo get_bloginfo('wpurl'); ?>" class="title">
-						<?php get_template_part( 'template-parts/site/logo', 'header' ); ?>
-						<span><?php echo get_bloginfo('name')?></span>
-					</a>
-					<div class="flex right">
-						<nav class="social-links">
-							<?php $args = array('theme_location' => 'social'); ?>
-							<?php wp_nav_menu( $args ); ?> 
-						</nav>
-					</div>
-				</div>
-				<nav class="site-links">
-					<?php $args = array('theme_location' => 'primary'); ?>
-					<?php wp_nav_menu( $args ); ?> 
-				</nav>
-			</container>
-		</div>
-        <section class="header-content">
+		<? get_template_part( 'template-parts/header/analog', 'header'); ?>
+
+        <section class="news-header-content">
             <container>
                 <?php get_template_part( 'template-parts/post/content', 'featured' ); ?>
             </container>

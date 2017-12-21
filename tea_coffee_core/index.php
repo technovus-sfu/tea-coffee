@@ -16,24 +16,27 @@
 
 get_header(); ?>
 
-<?php
+<section class="page-header">
+	<bubble>
+		<h1>Index</h1>
+	</bubble>
+</section>
 
-if (have_posts()) :
-	while (have_posts()) : the_post();?>
+<div class="page-content content index-content">
+	<container>
+		<?
+		if (have_posts()) :
+			while (have_posts()) : the_post();
+		?>
+				<h1><a href="<? the_permalink(); ?>"><?php the_title(); ?></a></h1>
+				<?php the_excerpt();?>
+		<? 
+			endwhile;
+		else :
+			echo '<p>No content found</p>';
+		endif;
+		?>
+	</container>
+</div>
 
-	<section class="page-header">
-		<bubble>
-			<h1><?php the_title(); ?></h1>
-		</bubble>
-	</section>
-
-	<?php get_template_part( 'template-parts/page/content', 'page' ); ?>
-
-	<?php endwhile;
-	else :
-		echo '<p>No content found</p>';
-endif;
-
-get_footer();
-	
-?>
+<? get_footer(); ?>

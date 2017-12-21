@@ -1,17 +1,16 @@
 <?php
 /**
- * Main site header
+ * The template for displaying the header for non white pages
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @link https://codex.wordpress.org/
  *
  * @package Wordpress
  * @subpackage Tea Coffee
  * @version 1.0.0
  */
+?>
 
-get_template_part( 'template-parts/site/site', 'head' ); ?>
-
-<header class="main main-header site-header">
+<header class="analog-header site-header">
     <container>
         <div class="site-header-bar">
             <div class="site-title">
@@ -27,7 +26,7 @@ get_template_part( 'template-parts/site/site', 'head' ); ?>
         </div>
         <nav class="site-links">
             <?php $args = array('theme_location' => 'primary'); ?>
-            <?php wp_nav_menu( $args ); ?>
+            <?php wp_nav_menu( $args ); ?> 
         </nav>
     </container>
 </header>

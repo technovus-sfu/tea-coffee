@@ -11,11 +11,11 @@
 ?>
 
 <span>
-    <?php if( has_custom_logo() ) { ?>
-        <icon class="footer-icon">
-            <?php the_custom_logo(); ?>
-        </icon>
-    <?php } else { ?>
+    <? 
+    if( has_custom_logo() ) :
+            the_custom_logo(); 
+    ?>
+    <? else : ?>
         An SFSS Society
-    <?php } ?>
+    <? endif; ?>
 </span>

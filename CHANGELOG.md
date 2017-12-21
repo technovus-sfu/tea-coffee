@@ -9,10 +9,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Theme name to Tea Coffee
 - Index display format
+- Repository heirarchy and layout
+- README instructions
+- Consolidated similar styling instructions
 
 ### Added
+- Logo display support
 - Page content links bug fix
 - gitignore
+- Support for sticky posts
 
 ### Removed
 - Bash uploader file 

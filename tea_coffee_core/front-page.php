@@ -13,26 +13,7 @@ get_template_part( 'template-parts/site/site', 'head' ); ?>
 
 <section class="splash-section">
     <bubble>
-        <div class="splash-header">
-            <container>
-                <div class="title-head">
-                    <a href="<?php echo get_bloginfo('wpurl'); ?>" class="title">
-                        <?php get_template_part( 'template-parts/site/logo', 'header' ); ?>
-                        <span><?php echo get_bloginfo('name')?></span>
-                    </a>
-                    <div class="flex right">
-                        <nav class="social-links">
-                            <?php $args = array('theme_location' => 'social'); ?>
-                            <?php wp_nav_menu( $args ); ?> 
-                        </nav>
-                    </div>
-                </div>
-                <nav class="site-links">
-                    <?php $args = array('theme_location' => 'primary'); ?>
-                    <?php wp_nav_menu( $args ); ?> 
-                </nav>
-            </container>
-        </div>
+        <? get_template_part( 'template-parts/header/analog', 'header'); ?>
 
         <div class="splash-info">
             <div class="splash-info-content">
