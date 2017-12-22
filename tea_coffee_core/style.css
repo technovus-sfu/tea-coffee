@@ -135,10 +135,8 @@ container {
 }
 
 
-
-
 #mobile-nav-view {
-    display: flex;
+    display: none;
     position: fixed;
     justify-content: center;
     align-items: center;
@@ -162,7 +160,7 @@ container {
     margin: 0;
 }
 .composite-mobile-navigation a {
-    font-size: 40px;
+    font-size: 30px;
     padding: 0 10px;
     text-transform: uppercase;
     width: 200px;
@@ -238,7 +236,7 @@ section nav ul, .main nav ul {
     font-size: 13px;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 10px 0 10px;
+    margin: 10px;
     border: 0.5px solid rgba(0,0,0,0.0);
     border-radius: 5px;
     letter-spacing: 1px;
@@ -381,6 +379,9 @@ section nav ul, .main nav ul {
 .mobile-nav .widget-item {
     display: flex;
     align-content: center;
+}
+header .widget-item {
+    display: flex;
 }
 header .widget-item ul{
     display: flex;
@@ -720,6 +721,9 @@ sidebar .post-date {
 
 /*------------MEDIA------------------*/
 @media screen and (max-width:780px) {
+    #mobile-nav-view {
+        display: flex;
+    }
     .header-widget-location, .site-links {
         display: none;
     }

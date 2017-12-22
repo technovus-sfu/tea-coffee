@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased] - XXXX-XXX-XX
 ### Changed
 - Fixed version number in WordPress
+- Fixed styling bugs
 
 ## [1.2.0] - 2017-DEC-21
 ### Changed
