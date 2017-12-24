@@ -16,20 +16,23 @@ $args = array(
 	'ignore_sticky_posts' => 1
 );
 $the_query = new WP_Query( $args );
-if ( isset($sticky[0]) ) : ?>
+if ( isset($sticky[0]) ) : 
+while($the_query->have_posts()) : $the_query->the_post(); ?>
 
 <div class="news-page-title">News<span>Featured</span></div>            
 <article class="featured">
-    <a href="<? $the_query->the_permalink(); ?>">
+    <a href="<? the_permalink(); ?>">
         <container class="featured-content">
 
-            <p class="featured-title post-title"><? $the_query->the_title(); ?></p>
-            <div class="post-excerpt content"><? $the_query->the_excerpt(); ?></div>
+            <p class="featured-title post-title"><? the_title(); ?></p>
+            <div class="post-excerpt content"><? the_excerpt(); ?></div>
 
         </container>
     </a>
 </article>
 
+<? endwhile; ?>
+<? wp_reset_postdata(); // reset the query ?>
 <? else :?>
 
 <div class="news-page-title no-featured">News</div>            
