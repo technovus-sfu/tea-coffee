@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Template part for displaying sticky post
  *
@@ -21,20 +21,20 @@ while($the_query->have_posts()) : $the_query->the_post(); ?>
 
 <div class="news-page-title">News<span>Featured</span></div>            
 <article class="featured">
-    <a href="<? the_permalink(); ?>">
+    <a href="<?php the_permalink(); ?>">
         <container class="featured-content">
 
-            <p class="featured-title post-title"><? the_title(); ?></p>
-            <div class="post-excerpt content"><? the_excerpt(); ?></div>
+            <p class="featured-title post-title"><?php the_title(); ?></p>
+            <div class="post-excerpt content"><?php the_excerpt(); ?></div>
 
         </container>
     </a>
 </article>
 
-<? endwhile; ?>
-<? wp_reset_postdata(); // reset the query ?>
-<? else :?>
+<?php endwhile; ?>
+<?php wp_reset_postdata(); // reset the query ?>
+<?php else :?>
 
 <div class="news-page-title no-featured">News</div>            
 
-<? endif; ?>
+<?php endif; ?>

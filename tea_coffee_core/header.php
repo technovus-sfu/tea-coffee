@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Main site header
  *

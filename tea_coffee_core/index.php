@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * The main template file
  *
@@ -24,13 +24,13 @@ get_header(); ?>
 
 <div class="page-content content index-content">
 	<container>
-		<?
+		<?php
 		if (have_posts()) :
 			while (have_posts()) : the_post();
 		?>
-				<h1><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h1>
-				<? the_excerpt();?>
-		<? 
+				<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+				<?php the_excerpt();?>
+		<?php 
 			endwhile;
 		else :
 			echo '<p>No content found</p>';
@@ -39,4 +39,4 @@ get_header(); ?>
 	</container>
 </div>
 
-<? get_footer(); ?>
+<?php get_footer(); ?>

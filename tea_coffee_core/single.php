@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * The template for displaying all single posts
  *
@@ -12,21 +12,21 @@
 get_template_part( 'template-parts/site/site', 'head' ); ?>
 
 <section class="news-header-section">
-    <? get_template_part( 'template-parts/header/analog', 'header'); ?>
+    <?php get_template_part( 'template-parts/header/analog', 'header'); ?>
 
     <section class="news-header-content">
         <container>
-            <? get_template_part( 'template-parts/post/content', 'featured' ); ?>
+            <?php get_template_part( 'template-parts/post/content', 'featured' ); ?>
         </container>
     </section>
 </section>
 <section class="news-page-content-section news-single-page-content-section">
     <container>
         <posts>
-            <? get_template_part( 'template-parts/post/content', 'single' ); ?>
+            <?php get_template_part( 'template-parts/post/content', 'single' ); ?>
         </posts>
-        <? get_sidebar(); ?>
+        <?php get_sidebar(); ?>
     </container>
 </section>
 
-<? get_footer(); ?>
+<?php get_footer(); ?>

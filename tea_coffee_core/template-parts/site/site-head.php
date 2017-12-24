@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Generic site head for multiple pages
  *
@@ -26,14 +26,14 @@
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
-    <? wp_head() ?>
+    <?php wp_head() ?>
 </head>
 
 <body>
 <div id="mobile-nav-view">
     <nav class="composite-mobile-navigation">
-        <? $args = array('theme_location' => 'primary'); ?>
-        <? wp_nav_menu( $args ); ?> 
-        <? dynamic_sidebar('header1'); ?>
+        <?php $args = array('theme_location' => 'primary'); ?>
+        <?php wp_nav_menu( $args ); ?> 
+        <?php dynamic_sidebar('header1'); ?>
     </nav>
 </div>

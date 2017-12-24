@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Template part for displaying page content in page.
  *
@@ -13,6 +13,6 @@
 
 <section class="page-content content">
     <container>
-        <? the_content(); ?>
+        <?php the_content(); ?>
     </container>
 </section>

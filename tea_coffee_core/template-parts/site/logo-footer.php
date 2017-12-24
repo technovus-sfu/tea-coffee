@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Template part for displaying footer logo
  *
@@ -11,11 +11,11 @@
 ?>
 
 <span>
-    <? 
+    <?php 
     if( has_custom_logo() ) :
             the_custom_logo(); 
     ?>
-    <? else : ?>
+    <?php else : ?>
         An SFSS Society
-    <? endif; ?>
+    <?php endif; ?>
 </span>

@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * The template for displaying the header for white pages
  *
@@ -14,8 +14,8 @@
     <container>
         <div class="site-header-bar">
             <div class="site-title">
-                <? get_template_part( 'template-parts/site/logo', 'header' ); ?>
-                <a class="site-name" href="<? echo get_bloginfo('wpurl') ?>"><? echo get_bloginfo('name')?></a>
+                <?php get_template_part( 'template-parts/site/logo', 'header' ); ?>
+                <a class="site-name" href="<?php echo get_bloginfo('wpurl') ?>"><?php echo get_bloginfo('name')?></a>
             </div>
             <div class="mobile-nav right">
                 <a id="mobile-nav-button" href="#">
@@ -23,12 +23,12 @@
                 </a>
             </div>
             <div class="header-widget-location right">
-                <? dynamic_sidebar('header1'); ?>
+                <?php dynamic_sidebar('header1'); ?>
             </div>
         </div>
         <nav class="site-links">
-            <? $args = array('theme_location' => 'primary'); ?>
-            <? wp_nav_menu( $args ); ?>
+            <?php $args = array('theme_location' => 'primary'); ?>
+            <?php wp_nav_menu( $args ); ?>
         </nav>
     </container>
 </header>

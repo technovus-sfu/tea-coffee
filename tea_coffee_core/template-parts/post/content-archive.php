@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Template part for displaying single post
  *
@@ -10,23 +10,23 @@
  */
 ?>
 
-<?
+<?php
 if (have_posts()) :
     while (have_posts()) : the_post();
 ?>
 
 <article>
-    <a href="<? the_permalink(); ?>">
+    <a href="<?php the_permalink(); ?>">
         <container>
-            <h2 class="post-title"><? the_title(); ?></h2>
+            <h2 class="post-title"><?php the_title(); ?></h2>
             <div class="single-post-content content">
-                <? the_excerpt(); ?>
+                <?php the_excerpt(); ?>
             </div>
         </container>
     </a>
 </article>
     
-<? endwhile;
+<?php endwhile;
     else :
         echo '<p>No content found</p>';
 endif;

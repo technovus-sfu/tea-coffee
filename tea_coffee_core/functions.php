@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * TBA functions and definitions
  *

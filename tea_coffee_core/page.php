@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Template part for displaying page content in page.
  *
@@ -11,19 +11,19 @@
 
 get_header(); ?>
 
-<?
+<?php
 if (have_posts()) :
 	while (have_posts()) : the_post(); ?>
 
 	<section class="page-header">
 		<bubble>
-			<h1><? the_title(); ?></h1>
+			<h1><?php the_title(); ?></h1>
 		</bubble>
 	</section>
 
-	<? get_template_part( 'template-parts/page/content', 'page' ); ?>
+	<?php get_template_part( 'template-parts/page/content', 'page' ); ?>
 
-	<? endwhile;
+	<?php endwhile;
 	else :
 		echo '<p>No content found</p>';
 endif;

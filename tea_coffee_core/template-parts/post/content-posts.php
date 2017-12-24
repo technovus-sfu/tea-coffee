@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Template part for displaying post list
  *
@@ -10,18 +10,18 @@
  */
 ?>
 
-<?
+<?php
 if (have_posts()) :
     while (have_posts()) : the_post();
 ?>
 
 <article>
-    <a href="<? the_permalink(); ?>">
+    <a href="<?php the_permalink(); ?>">
         <container>
-            <h2 class="post-title"><? the_title(); ?></h2>
+            <h2 class="post-title"><?php the_title(); ?></h2>
             <p class="post-info">
-                    <? echo the_time( 'F j, Y g:i a' ); ?> | Posted in 
-                    <?
+                    <?php echo the_time( 'F j, Y g:i a' ); ?> | Posted in 
+                    <?php
                         $categories = get_the_category();
                         $seperator = ", ";
                         $output = '';
@@ -37,13 +37,13 @@ if (have_posts()) :
                     ?>
             </p>
             <div class="post-excerpt content">
-                <? the_excerpt(); ?>
+                <?php the_excerpt(); ?>
             </div>
         </container>
     </a>
 </article>
     
-<? endwhile;
+<?php endwhile;
     else :
         echo '<p>No content found</p>';
 endif;
