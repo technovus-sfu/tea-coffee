@@ -5,9 +5,18 @@ The format of this change log is based on [Keep a Changelog](http://keepachangel
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - XXXX-XXX-XX
+### 
+ 
+
+## [1.2.1] - 2017-DEC-23
 ### Changed
 - Fixed version number in WordPress
-- Fixed styling bugs
+- Mobile menu font size
+- Mobile menu transition to 300ms
+- Mobile menu display conditions
+- All opening tags to <?php
+- Version number to 1.2.1
+ 
 
 ## [1.2.0] - 2017-DEC-21
 ### Changed
@@ -44,5 +53,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ## Compare
-[1.2.0]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.0...HEAD
- 1.0.0 : https://github.com/technovus-sfu/technovus-theme/compare/v1.0.0...v1.2.0
+[Unreleased]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.0...v1.2.1
+[1.2.0]: https://github.com/technovus-sfu/technovus-theme/compare/v1.0.0...v1.2.0
