@@ -742,6 +742,9 @@ sidebar .post-date {
     .shortcut-links {
         margin: 40px;
     }
+    .featured .post-title {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width:690px) {
