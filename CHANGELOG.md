@@ -7,6 +7,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased] - YYYY-MMM-DD
 ### Changed
 - Chnagelog date format
+- Renamed core folder
+
+### Added
+- 
 
 &nbsp;
 ## [1.2.1] - 2017-DEC-23
