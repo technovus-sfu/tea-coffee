@@ -84,7 +84,7 @@ function cfe_splash_info( $wp_customize ) {
     ));
 
     $wp_customize->add_setting('cfe-splash-info-headline', array(
-        'default' => 'Insert Headline Here.'
+        'default' => 'Technology. Innovation. Us.'
     ));
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, '
     cfe_splash-info-headline-control', array(
@@ -94,7 +94,7 @@ function cfe_splash_info( $wp_customize ) {
     )));
 
     $wp_customize->add_setting('cfe-splash-info-typing-prompt', array(
-        'default' => 'Prompt '
+        'default' => 'Community of '
     ));
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, '
     cfe_splash-info-typing-prompt-control', array(
@@ -104,7 +104,7 @@ function cfe_splash_info( $wp_customize ) {
     )));
     
     $wp_customize->add_setting('cfe-splash-info-typing-array', array(
-        'default' => '[ "Prompt1", "Prompt2" ]'
+        'default' => '[ "Enthusiasts.", "Learning.", "Fun!" ]'
     ));
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, '
     cfe_splash-info-typing-array-control', array(
