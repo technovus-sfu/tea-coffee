@@ -8,7 +8,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Chnagelog date format
 - Renamed core folder
-- Splash page default text to actual default 
+- Splash page default text to actual default
+- screenshot
 
 ### Added
 - Custom css file
