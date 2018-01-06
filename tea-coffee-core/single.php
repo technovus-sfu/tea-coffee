@@ -6,7 +6,7 @@
  * 
  * @package Wordpress
  * @subpackage Tea Coffee
- * @version 1.2.1
+ * @version 1.2.2
  */
 
 get_template_part( 'template-parts/site/site', 'head' ); ?>

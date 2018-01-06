@@ -1,5 +1,5 @@
 # Tea-Coffee Theme :tea: :coffee:
-Tea Coffee theme for wordpress.org
+Tea-Coffee theme for wordpress.org
 
 # Setup
 These instructions work for the popular operating systems.

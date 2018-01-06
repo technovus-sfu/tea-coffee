@@ -6,13 +6,18 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MMM-DD
 ### Changed
+
+&nbsp;
+## [1.2.2] - 2018-JAN-06
+### Changed
 - Chnagelog date format
 - Renamed core folder
 - Splash page default text to actual default
-- screenshot
+- Screenshot
 
 ### Added
 - Custom css file
+- Bug fixes
 
 ### Removed
 - Splash animation
@@ -61,6 +66,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - This CHANGELOG file
 - A CODE OF CONDUCT for community
 
-[Unreleased]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.1...HEAD
+
+[Unreleased]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.2...HEAD
+[1.2.2]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/technovus-sfu/technovus-theme/compare/v1.0.0...v1.2.0
