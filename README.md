@@ -8,6 +8,9 @@ These instructions work for the popular operating systems.
 - Download the Bitnami WordPress module from [here](https://bitnami.com/stack/xampp#wordpress)
 - Install XAMPP
 - Install the WordPress module into XAMPP
-- Goto your browser and enter `localhost` 
+- Goto your browser and enter `localhost/wordpress/`
+- Download release zip folder
+- Log into Admin panel from `localhost/wordpress/wp-admin`
+- Upload theme zip from `Dashboard > Appearances > Themes > Add Theme`
 
 Please report [issues](../../issues) and suggest [changes](../../pulls) to better modify these installation instructions
