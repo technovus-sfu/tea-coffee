@@ -1,4 +1,4 @@
-# Tea Coffee Theme :tea: :coffee:
+# Tea-Coffee Theme :tea: :coffee:
 Tea Coffee theme for wordpress.org
 
 # Setup
