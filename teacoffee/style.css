@@ -188,11 +188,10 @@ section nav ul, .main nav ul {
 
 /* SPLASH */
 .splash-section {
-    height: 100vh;   
+    height: 100vh;
 }
 .splash-section bubble {
     background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    animation: multi 10s infinite;
 }
 
 /* content */
@@ -724,6 +723,10 @@ sidebar .post-date {
     #mobile-nav-view {
         display: flex;
     }
+    .footer-links a::after {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .header-widget-location, .site-links {
         display: none;
     }
@@ -737,7 +740,7 @@ sidebar .post-date {
         font-size: 10px;
     }
     .splash-info {
-        height: 75%;
+        height: 85%;
     }
     .shortcut-links {
         margin: 40px;

@@ -1,0 +1,12 @@
+.splash-section {
+	background: url(http://www.technovus.ca/wp-content/uploads/2017/09/remb1.jpg);
+	background-size: cover;
+}
+.splash-section bubble {
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8dbee 51%, #2cb5e8cc 75%);
+}
+bubble {
+	padding: .5rem;
+	margin: 0;
+	border-radius: 0;
+}

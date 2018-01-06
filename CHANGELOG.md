@@ -10,7 +10,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Renamed core folder
 
 ### Added
-- 
+- Custom css file
+
+### Removed
+- Splash animation
 
 &nbsp;
 ## [1.2.1] - 2017-DEC-23
