@@ -4,7 +4,7 @@ Theme URI: https://technovus.ca/downloads
 Author: polinkc & eeshiken
 Author URI: https://technovus.ca/
 Description: Theme custom designed for Technovus SFU. Tea Coffee brings a creative take on the single view single page home-paged website. It supports sticky posts and many other features. Use and be creative!
-Version: 1.2.2
+Version: 1.2.3
 License: MIT License
 License URI: https://github.com/technovus-sfu/technovus-theme/blob/master/LICENSE
 Text Domain: technovus
@@ -113,7 +113,7 @@ container {
 }
 .mobile-nav-icon {
     top: 38%;
-}  
+}
 .mobile-nav-icon::before {
     top: -5px;
 }
@@ -213,6 +213,10 @@ section nav ul, .main nav ul {
 }
 .splash-info-content span:first-child {
     margin-bottom: 10px;
+}
+#general-info.splash-info-content {
+    font-size: 15px;
+    width: 80%;
 }
 .splash-info-content span {
     text-align: center;
@@ -595,6 +599,15 @@ article a container:hover .post-title {
 /* news */
 
 /* PAGE */
+#project-page-tag {
+    color: #fff;
+    font-family: Audiowide;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 3rem;
+}
 .page-content {
     width: 80%;
     margin: 50px auto;
@@ -674,7 +687,7 @@ sidebar .post-date {
     width: 1px;
 }
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
     box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -682,12 +695,12 @@ sidebar .post-date {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(0,0,0,0.8); 
-    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
+    background: rgba(0,0,0,0.8);
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
     box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgb(255, 255, 255, 0.5); 
+    background: rgb(255, 255, 255, 0.5);
 }
 /* scroll bar */
 
@@ -703,7 +716,7 @@ sidebar .post-date {
     }
     25% {
         background:#6ccce3;
-    }    
+    }
     50% {
         background:#2cb5e8;
     }

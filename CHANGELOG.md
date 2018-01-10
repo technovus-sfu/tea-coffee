@@ -5,7 +5,9 @@ The format of this change log is based on [Keep a Changelog](http://keepachangel
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MMM-DD
-### Changed
+### Added
+- General information display on the splash page
+- A poject page template
 
 &nbsp;
 ## [1.2.2] - 2018-JAN-06

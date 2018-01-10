@@ -6,7 +6,7 @@
  *
  * @package Wordpress
  * @subpackage Tea Coffee
- * @version 1.2.2
+ * @version 1.2.3
  */
 
 get_template_part( 'template-parts/site/site', 'head' ); ?>
@@ -29,6 +29,9 @@ get_template_part( 'template-parts/site/site', 'head' ); ?>
                 <?php $args = array('theme_location' => 'shortcuts'); ?>
                 <?php wp_nav_menu( $args ) ?>
             </nav>
+            <div id="general-info" class="splash-info-content">
+                <span><?php echo get_theme_mod('cfe-splash-general-info'); ?></span>
+            </div>
         </div>
 
         <div class="splash-footer">

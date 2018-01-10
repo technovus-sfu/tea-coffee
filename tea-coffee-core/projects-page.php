@@ -1,12 +1,14 @@
 <?php
 /**
- * Template part for displaying page content in page.
+ * Template part for projects.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Wordpress
  * @subpackage Tea Coffee
  * @version 1.2.3
+ * 
+ * Template Name: Project
  */
 
 get_header(); ?>
@@ -14,6 +16,8 @@ get_header(); ?>
 <?php
 if (have_posts()) :
 	while (have_posts()) : the_post(); ?>
+
+    <section id="project-page-tag">Project</section>
 
 	<section class="page-header">
 		<bubble>

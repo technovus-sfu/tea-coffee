@@ -6,7 +6,7 @@
  *
  * @package Wordpress
  * @subpackage Tea Coffee
- * @version 1.2.2
+ * @version 1.2.3
  */
 
 /**
@@ -121,6 +121,16 @@ function cfe_splash_info( $wp_customize ) {
         'label' => 'Typing speed',
         'section' => 'cfe-splash-info-section',
         'settings' => 'cfe-splash-info-typing-speed',
+    )));
+
+    $wp_customize->add_setting('cfe-splash-general-info', array(
+        'default' => 'Drop by Rm 5370, SFU Surrey Campus every Monday for out work meetings'
+    ));
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, '
+    cfe_splash-general-info-control', array(
+        'label' => 'Information',
+        'section' => 'cfe-splash-info-section',
+        'settings' => 'cfe-splash-general-info'
     )));
 }
 
