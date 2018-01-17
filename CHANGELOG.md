@@ -5,6 +5,10 @@ The format of this change log is based on [Keep a Changelog](http://keepachangel
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MMM-DD
+### Features
+- 
+
+## [1.2.3] - 2018-JAN-17
 ### Added
 - General information display on the splash page
 - A poject page template
@@ -72,8 +76,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - This CHANGELOG file
 - A CODE OF CONDUCT for community
 
-
-[Unreleased]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.2...HEAD
+[Unreleased]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.3...HEAD
+[1.2.3]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.2...v1.2.3
 [1.2.2]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/technovus-sfu/technovus-theme/compare/v1.0.0...v1.2.0
