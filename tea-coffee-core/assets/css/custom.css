@@ -8,3 +8,16 @@
 	margin: 0;
 	border-radius: 0;
 }
+article {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+body {
+	background: #f5f5f5;
+}
+.news-page-content-section {
+	top: -50px;
+}
+.page-content ul li {
+	list-style: inside;
+	display: list-item;
+}

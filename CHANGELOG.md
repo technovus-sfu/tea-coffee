@@ -8,6 +8,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - General information display on the splash page
 - A poject page template
+- Updated custom css [100]
+
+### Changed
+- `projects-page.php` to `project-page.php` [100]
 
 &nbsp;
 ## [1.2.2] - 2018-JAN-06
