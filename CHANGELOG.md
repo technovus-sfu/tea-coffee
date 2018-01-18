@@ -5,9 +5,13 @@ The format of this change log is based on [Keep a Changelog](http://keepachangel
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MMM-DD
-### Features
-- 
+### Added
+- Event template [101]
 
+### Changed
+- Fixed default splash info message spelling bug [101]
+
+&nbsp;
 ## [1.2.3] - 2018-JAN-17
 ### Added
 - General information display on the splash page
