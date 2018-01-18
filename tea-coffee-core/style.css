@@ -607,6 +607,7 @@ article a container:hover .post-title {
     align-items: center;
     padding: 1rem;
     padding-left: 3rem;
+    width: auto;
 }
 .page-content {
     width: 80%;
