@@ -6,7 +6,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased] - YYYY-MMM-DD
 ### Added
+-
+
+&nbsp;
+## [1.2.4] - 2018-JAN-23
+### Added
 - Event template [101]
+- Bug fixes [102]
 
 ### Changed
 - Fixed default splash info message spelling bug [101]
@@ -68,7 +74,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Mobile responsive support
 
 ### Removed
-- Bash uploader file 
+- Bash uploader file
 
 &nbsp;
 ## 1.0.0 - 2017-DEC-19
@@ -80,12 +86,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - This CHANGELOG file
 - A CODE OF CONDUCT for community
 
-[Unreleased]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.3...HEAD
+[Unreleased]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.4...HEAD
+[1.2.4]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.3...v1.2.4
 [1.2.3]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.2...v1.2.3
 [1.2.2]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/technovus-sfu/technovus-theme/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/technovus-sfu/technovus-theme/compare/v1.0.0...v1.2.0
 
-
+[102]: https://github.com/technovus-sfu/tea-coffee/commit/
 [101]: https://github.com/technovus-sfu/tea-coffee/commit/
 [100]: https://github.com/technovus-sfu/tea-coffee/commit/

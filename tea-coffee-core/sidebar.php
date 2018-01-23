@@ -6,7 +6,7 @@
  *
  * @package Wordpress
  * @subpackage Tea Coffee
- * @version 1.2.3
+ * @version 1.2.4
  */
 
 if ( ! is_active_sidebar( 'sidebar1' ) ) {

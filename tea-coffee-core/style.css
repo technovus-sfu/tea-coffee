@@ -1,10 +1,10 @@
 /*
 Theme Name: Tea Coffee
-Theme URI: https://technovus.ca/downloads
-Author: polinkc & eeshiken
-Author URI: https://technovus.ca/
+Theme URI: https://github.com/technovus-sfu/tea-coffee/
+Author: Eeshiken
+Author URI: https://eeshiken.github.io/interactive-resume/
 Description: Theme custom designed for Technovus SFU. Tea Coffee brings a creative take on the single view single page home-paged website. It supports sticky posts and many other features. Use and be creative!
-Version: 1.2.3
+Version: 1.2.4
 License: MIT License
 License URI: https://github.com/technovus-sfu/technovus-theme/blob/master/LICENSE
 Text Domain: technovus
@@ -34,7 +34,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
     min-width: 360px;
 }
-html, body, p, h1, h2, h3 {
+html, body {
     margin: 0;
     transition: transform 0.5s ease 0.02s;
 }
@@ -286,6 +286,23 @@ section nav ul, .main nav ul {
     font-family: 'Kanit', sans-serif;
 }
 /* splash */
+
+/* EVENT */
+#event-page-header bubble {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 0;
+    min-height: 20vh;
+}
+#event-page-header h1 {
+    margin: 0 0 10px 0;
+}
+#event-page-header bubble span {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* event */
 
 /* HEADER */
 /* general site header config */
@@ -734,6 +751,14 @@ sidebar .post-date {
 
 /*------------MEDIA------------------*/
 @media screen and (max-width:780px) {
+    /* 404 */
+    .error .heading {
+        font-size: 130px;
+    }
+    .error .text {
+        font-size: 10px;
+    }
+    /* 404 */
     #mobile-nav-view {
         display: flex;
     }
